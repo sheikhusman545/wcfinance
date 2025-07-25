@@ -15,7 +15,7 @@ header('Content-Type: application/json');
 $data = json_decode(file_get_contents('php://input'), true);
 
 $recaptcha_token = $data['recaptcha_token'] ?? null;
-$secret_key = '6Lf3AWgrAAAAAMn_Kwn3_pyJeBshopN72cUu6FMI'; // from Google reCAPTCHA admin panel
+$secret_key = 'write you key here '; // from Google reCAPTCHA admin panel
 
 // Verify reCAPTCHA with Google
 $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret={$secret_key}&response={$recaptcha_token}");
