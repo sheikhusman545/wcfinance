@@ -1,0 +1,2041 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Western Commercial Finance | About</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Google Fonts: Clash Display & Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Bootstrap Icons CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <!-- Bootstrap Icons CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="icon" href="images/wcf.svg">
+    <style>
+        body {
+            background: #f9fafb;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Clash Display', sans-serif;
+        }
+
+        .nav-pill-rounded {
+            border: 1px solid #16163F;
+            border-radius: 999px;
+            padding: 4px 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .nav-link.active {
+            background-color: #16163F;
+            color: white !important;
+            border-radius: 999px;
+            padding: 8px 20px;
+        }
+
+        .nav-link {
+            color: #16163F;
+            font-weight: 500;
+        }
+
+
+        .hero-wrapper {
+            background: #fff;
+        }
+
+        .hero-section {
+            position: relative;
+            border-radius: 60px;
+            overflow: hidden;
+            min-height: 750px;
+            /*max-width: 90%;*/
+            margin: auto;
+        }
+
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            background: url('images/hero2.jpg') no-repeat center center;
+            background-size: cover;
+            z-index: 1;
+
+        }
+
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            /* background: linear-gradient(90deg, rgba(0, 0, 0, 0.85) 30%, rgba(0, 0, 0, 0.0) 70%); */
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%);
+            z-index: 2;
+            /* width: 1812px;
+            height: 778.834px; */
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 3;
+            color: white;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            /* padding-top: 240px; */
+            padding-left: 50px;
+        }
+
+        .hero-title {
+            /* font-weight: 700;
+            font-size: 3.5rem;
+            line-height: 1.1; */
+            color: #FFF;
+            text-shadow: 6px 6px 60px rgba(0, 0, 0, 0.30);
+            font-family: "Clash Display";
+            font-size: 74px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 100%;
+            /* 74px */
+            letter-spacing: -0.74px;
+        }
+
+        .hero-text {
+            /* font-size: 1.1rem; */
+            margin: 20px 0;
+            max-width: 500px;
+            color: #FFF;
+            text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.40);
+            font-family: Poppins;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 130%;
+            /* 28.6px */
+            letter-spacing: -0.22px;
+        }
+
+        .apply-btn {
+            border-radius: 100px;
+            background: #42A147;
+            color: white;
+            font-weight: 600;
+            padding: 12px 30px;
+            box-shadow: 0px 16px 50px 0px rgba(66, 161, 71, 0.40);
+            border: none;
+        }
+
+        .payment-btn {
+            border-radius: 100px;
+            background: transparent;
+            color: white;
+            font-weight: 600;
+            padding: 12px 30px;
+            box-shadow: 0px 16px 50px 0px rgba(66, 161, 71, 0.40);
+            border: 1px solid white;
+        }
+
+        .payment-btn span {
+            color: #201B52;
+            font-family: "Clash Display";
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 110%;
+            /* 33px */
+            letter-spacing: -0.3px;
+        }
+
+        .scroll-down {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: white;
+            color: #000;
+            border-top-right-radius: 60px;
+            padding: 20px 30px;
+            display: flex;
+            align-items: center;
+            z-index: 4;
+            color: #201B52;
+            font-family: Poppins;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 100%;
+            /* 22px */
+            letter-spacing: -0.22px;
+        }
+
+        .scroll-down i {
+            margin-left: 3px;
+            color: #42A147;
+            font-size: x-large;
+        }
+
+
+
+        .equipment-partner-section {
+            padding: 80px 0;
+            background: linear-gradient(to right, #ffffff 60%, #f4fdf5);
+        }
+
+        .equipment-partner-title {
+            font-family: 'Clash Display', sans-serif;
+            font-weight: 700;
+            font-size: 36px;
+            color: #120E3A;
+        }
+
+        .equipment-partner-subtitle {
+            color: #42A147;
+            font-weight: 500;
+            margin-bottom: 12px;
+        }
+
+        .equipment-partner-text {
+            color: #333;
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+        .equipment-partner-image {}
+
+        .equipment-partner-btn {
+            border-radius: 50px;
+            background-color: #42A147;
+            color: white;
+            font-weight: 500;
+            padding: 10px 24px;
+            box-shadow: 0px 16px 50px rgba(66, 161, 71, 0.4);
+            border: none;
+        }
+
+        .equipment-partner-feature {
+            background-color: #FAFAFB;
+            border-radius: 16px;
+            padding: 24px;
+            height: 100%;
+        }
+
+        .equipment-partner-feature-icon {
+            background: #f0f1f3;
+            border-radius: 12px;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 16px;
+        }
+
+        .equipment-partner-feature-title {
+            font-weight: 600;
+            font-size: 16px;
+            color: #120E3A;
+        }
+
+        .equipment-partner-feature-title span {
+            color: #42A147;
+        }
+
+        .equipment-partner-feature-text {
+            font-size: 14px;
+            color: #444;
+            margin-top: 6px;
+        }
+
+        .phone-text {
+            font-weight: 600;
+            color: #16163F;
+        }
+
+        .phone-icon {
+            color: #16163F;
+            font-size: 1.2rem;
+        }
+
+        .phone-arrow {
+            color: #28a745;
+            font-weight: bold;
+        }
+
+        .testimonial-card {
+            border-radius: 1rem;
+            box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+            padding: 1.5rem;
+            background: white;
+            height: 100%;
+            transition: all 0.3s ease;
+        }
+
+        .testimonial-card.bg-dark {
+            background-color: #121430 !important;
+            color: white;
+        }
+
+        .testimonial-card img.google-icon {
+            height: 24px;
+        }
+
+        .swiper-button-drag {
+            position: absolute;
+            bottom: -35px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #22c55e;
+            color: white;
+            padding: 8px 22px;
+            border-radius: 999px;
+            cursor: grab;
+            font-weight: bold;
+            z-index: 10;
+            box-shadow: 0 0 15px rgba(34, 197, 94, 0.3);
+            user-select: none;
+        }
+
+        .swiper-button-drag:active {
+            cursor: grabbing;
+        }
+
+        .swiper {
+            padding-bottom: 60px;
+        }
+
+
+        .who-we-serve {
+            padding: 60px 0;
+        }
+
+        .who-we-serve h5 {
+            color: #42A147;
+            font-weight: 500;
+        }
+
+        .who-we-serve h2 {
+            font-family: 'Clash Display', sans-serif;
+            font-size: 36px;
+            font-weight: 700;
+            color: #120E3A;
+        }
+
+        .who-we-serve p {
+            color: #444;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .who-we-serve .swiper-slide {
+            border-radius: 24px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .who-we-serve.swiper-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .who-we-serve .slide-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px;
+            color: #fff;
+            font-weight: 600;
+            font-size: 16px;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+            border-bottom-left-radius: 24px;
+            border-bottom-right-radius: 24px;
+        }
+
+        .who-we-serve .swiper {
+            padding: 30px 0;
+        }
+
+        .footer-heading {
+            font-family: 'Clash Display', sans-serif;
+            font-size: 22px;
+            font-weight: 600;
+            color: #111827;
+        }
+
+        .features-section {
+            background: radial-gradient(circle at right, #0e1f2f, #120E3A);
+            color: white;
+            border-radius: 60px;
+            padding: 60px;
+        }
+
+        .section-title {
+            font-family: 'Clash Display', sans-serif;
+            font-size: 38px;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .section-subtitle {
+            color: #42A147;
+            font-weight: 500;
+        }
+
+        .how-it-works {
+            padding: 80px 0;
+        }
+
+        .how-it-works h5 {
+            color: #42A147;
+            font-weight: 500;
+        }
+
+        .how-it-works h2 {
+            font-family: 'Clash Display', sans-serif;
+            font-weight: 700;
+            font-size: 36px;
+            color: #120E3A;
+        }
+
+        .how-it-works .step-circle {
+            width: 240px;
+            height: 240px;
+            border-radius: 50%;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            padding: 30px 20px;
+            position: relative;
+            margin: 0 auto;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .how-it-works .step-circle.highlight {
+            background-color: #f4fdf5;
+        }
+
+        .how-it-works .step-circle .step-icon {
+            font-size: 36px;
+            margin-bottom: 10px;
+            color: #120E3A;
+        }
+
+        .how-it-works .step-circle h6 {
+            font-weight: 600;
+            font-size: 16px;
+            color: #120E3A;
+        }
+
+        .how-it-works .step-circle h6 span {
+            color: #42A147;
+        }
+
+        .how-it-works .step-circle p {
+            font-size: 14px;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        .step-dot {
+            width: 8px;
+            height: 8px;
+            background-color: #42A147;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .step-dot.dot-top-left {
+            top: 8px;
+            left: 8px;
+        }
+
+        .step-dot.dot-top-right {
+            top: 8px;
+            right: 8px;
+        }
+
+        .step-dot.dot-bottom-left {
+            bottom: 8px;
+            left: 8px;
+        }
+
+        .step-dot.dot-bottom-right {
+            bottom: 8px;
+            right: 8px;
+        }
+
+        .how-it-works .step-dot {
+            width: 8px;
+            height: 8px;
+            background-color: #42A147;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .how-it-works .step-dot:nth-child(1) {
+            top: 8px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .how-it-works .step-dot:nth-child(2) {
+            bottom: 8px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .how-it-works .step-dot:nth-child(3) {
+            top: 50%;
+            left: 8px;
+            transform: translateY(-50%);
+        }
+
+        .how-it-works .step-dot:nth-child(4) {
+            top: 50%;
+            right: 8px;
+            transform: translateY(-50%);
+        }
+
+        .how-it-works .apply-btn {
+            border-radius: 50px;
+            background-color: #42A147;
+            color: white;
+            font-weight: 500;
+            padding: 10px 24px;
+            box-shadow: 0px 16px 50px rgba(66, 161, 71, 0.4);
+            border: none;
+        }
+
+        @media (max-width: 767px) {
+            .how-it-works .step-circle {
+                width: 100%;
+                height: auto;
+                border-radius: 20px;
+                padding: 20px;
+            }
+
+            .how-it-works .step-dot {
+                display: none;
+            }
+        }
+
+        .feature-card {
+            border-radius: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.14);
+            background: rgba(255, 255, 255, 0.06);
+            padding: 20px 25px;
+            color: white;
+        }
+
+        .feature-icon {
+            background: radial-gradient(circle, rgba(66, 161, 71, 1) 0%, rgba(32, 27, 82, 1) 100%);
+            border-radius: 50%;
+            /* width: 24px; */
+            /* height: 24px; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            width: 100px;
+            height: 100px;
+            flex-shrink: 0;
+        }
+
+        .feature-icon i {
+            color: white;
+            font-size: 12px;
+        }
+
+        .feature-title {
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        .feature-title .highlight {
+            color: #42A147;
+        }
+
+        .feature-text {
+            font-size: 14px;
+            color: #e4e4e4;
+            margin-top: 5px;
+        }
+
+        .built-trust {
+            padding: 60px 0;
+            background-color: #f9fafb;
+        }
+
+        .built-trust .section-subtitle {
+            color: #42A147;
+            font-weight: 500;
+        }
+
+        .built-trust .section-title {
+            font-family: 'Clash Display', sans-serif;
+            font-size: 36px;
+            font-weight: 700;
+            color: #120E3A;
+        }
+
+        .built-trust .section-description {
+            color: #333;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .built-trust .info-card {
+            background: #FAFAFB;
+            border-radius: 24px;
+            padding: 30px;
+            height: 100%;
+        }
+
+        .built-trust .info-icon {
+            background: #f2f3f5;
+            border-radius: 12px;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .built-trust .info-icon img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .built-trust .info-title {
+            font-weight: 700;
+            font-size: 20px;
+            color: #120E3A;
+        }
+
+        .built-trust .info-title span {
+            color: #42A147;
+        }
+
+        .built-trust .info-text {
+            font-size: 15px;
+            color: #444;
+            margin-top: 10px;
+        }
+
+        .footer-text {
+            font-size: 16px;
+            font-family: 'Poppins', sans-serif;
+            color: #4b5563;
+        }
+
+        .footer-link {
+            font-size: 16px;
+            font-family: 'Poppins', sans-serif;
+            color: #111827;
+            text-decoration: none;
+        }
+
+        .footer-link:hover {
+            text-decoration: underline;
+        }
+
+        .footer-logo-text {
+            font-family: 'Clash Display', sans-serif;
+            font-size: 22px;
+            font-weight: bold;
+            color: #111827;
+        }
+
+        /* index2 */
+
+        .features-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
+            max-width: 1200px;
+            margin: auto;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .feature-box {
+            background-color: white;
+            border-radius: 20px;
+            padding: 20px 24px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            min-width: 240px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+        }
+
+        .feature-icon {
+            background: gainsboro;
+            padding: 12px;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 56px;
+            height: 56px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+        }
+
+        .feature-icon img {
+            width: 32px;
+            height: 32px;
+            object-fit: contain;
+        }
+
+        .feature-text {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1.4;
+            color: #1f2937;
+        }
+
+        .highlight {
+            color: #2a5d2e;
+        }
+
+        .card {
+            background: radial-gradient(circle at top right, #1e2a39, #0e0e2a);
+            padding: 60px 30px;
+            text-align: center;
+            color: #fff;
+            display: flex;
+            border-radius: 60px;
+            background: #120E3A;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .logo {
+            background: white;
+            border-radius: 15px;
+            display: inline-block;
+            padding: 5px 20px;
+            margin-bottom: 40px;
+            Width: 277px;
+            height: 74px;
+
+        }
+
+        .logo img {
+            height: 70px;
+        }
+
+        .content {
+            font-size: 1.5rem;
+            line-height: 1.6;
+            font-weight: 400;
+            background: linear-gradient(92deg, #FFF 53.42%, #42A147 99.39%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+        }
+
+        .highlight {
+            /* color: #88cc8f; */
+        }
+
+        .finance-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: center;
+            align-items: stretch;
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .left-section,
+        .right-section {
+            flex: 1 1 450px;
+        }
+
+        .left-section h2 {
+            /* font-size: 1.8rem;
+            font-weight: 700; */
+            color: #1b1b3e;
+            margin-bottom: 20px;
+            color: #201B52;
+            font-family: "Clash Display";
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 120%;
+            /* 36px */
+            letter-spacing: -0.3px;
+        }
+
+        .left-section p {
+            /* font-size: 1rem; */
+            margin-bottom: 20px;
+            /* color: #444; */
+            color: #201B52;
+            font-family: Poppins;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+            /* 30px */
+            letter-spacing: -0.2px;
+        }
+
+        .left-section a {
+            color: #1b1b3e;
+            text-decoration: underline;
+        }
+
+        .read-more-btn {
+            background: linear-gradient(135deg, #63d471 0%, #233329 100%);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 100px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 600;
+            text-decoration: none;
+            box-shadow: 0px 16px 50px rgba(66, 161, 71, 0.4);
+        }
+
+        .read-more-btn span {
+            display: inline-block;
+            background: white;
+            color: #1b1b3e;
+            border-radius: 50%;
+            padding: 2px 8px;
+            font-weight: bold;
+        }
+
+        .right-section {
+            background: radial-gradient(circle at bottom left, #1b2a3d, #0f0f2e);
+            color: white;
+            padding: 40px;
+            border-radius: 40px;
+            text-align: center;
+        }
+
+        .stars {
+            font-size: 1.5rem;
+            color: #ffb100;
+            margin-bottom: 20px;
+        }
+
+        .quote {
+            /* font-size: 1rem; */
+            /* line-height: 1.6; */
+            margin-bottom: 30px;
+            color: #FFF;
+            text-align: center;
+            font-family: Poppins;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+            /* 30px */
+            letter-spacing: -0.2px;
+        }
+
+        .divider {
+            width: 40px;
+            height: 2px;
+            background-color: #42a147;
+            margin: 20px auto;
+        }
+
+        .author {
+            /* font-weight: 700; */
+            /* font-size: 1.2rem; */
+            color: #FFF;
+            font-family: "Clash Display";
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 120%;
+            /* 36px */
+            letter-spacing: -0.3px;
+        }
+
+        .buda-section {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            padding: 60px 5%;
+            flex-wrap: wrap;
+            /* background: linear-gradient(to right, #ffffff 60%, #f0f7f4 40%); */
+        }
+
+        .buda-about {
+            flex: 1;
+            max-width: 600px;
+        }
+
+        .buda-about h5 {
+            /* color: #42A147; */
+            /* font-size: 18px; */
+            margin-bottom: 10px;
+            color: #42A147;
+            font-family: Poppins;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 130%;
+            /* 28.6px */
+            letter-spacing: -0.22px;
+        }
+
+        .buda-about h2 {
+            /* font-weight: 700;
+            font-size: 26px;
+            color: #1a1a40;
+            line-height: 1.4;
+            margin-bottom: 15px; */
+            color: #201B52;
+            font-family: "Clash Display";
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 110%;
+            /* 33px */
+            letter-spacing: -0.3px;
+        }
+
+        .buda-about p {
+            /* font-size: 15px;
+            color: #333;
+            line-height: 1.7; */
+            margin-bottom: 20px;
+            color: #201B52;
+            font-family: Poppins;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+            /* 30px */
+            letter-spacing: -0.2px;
+        }
+
+        .buda-about button {
+            background: #42A147;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 5px 15px rgba(66, 161, 71, 0.3);
+        }
+
+        .buda-calculator {
+            flex: 1;
+            background: #eaf3ed;
+            border-radius: 30px;
+            padding: 30px 30px;
+            max-width: 600px;
+            border-radius: 60px;
+            background: linear-gradient(180deg, rgba(66, 161, 71, 0.20) 0%, rgba(24, 59, 26, 0.00) 100%);
+        }
+
+        .buda-calculator h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #1a1a40;
+        }
+
+        .buda-slider-group {
+            margin-bottom: 25px;
+        }
+
+        .buda-slider-group input[type=range] {
+            width: 100%;
+            accent-color: #42A147;
+        }
+
+        .buda-slider-labels {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            color: #1a1a40;
+            margin-top: 5px;
+        }
+
+        .buda-calculator-summary {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #ccc;
+            font-weight: 500;
+        }
+
+        .buda-calculator-summary div strong {
+            display: block;
+            font-size: 22px;
+            margin-top: 5px;
+            color: #1a1a40;
+        }
+
+        .buda-note {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #999;
+        }
+
+        .calculator-card {
+            background: linear-gradient(to bottom, #eaf3ed, #f5f7f6);
+            padding: 30px;
+            border-radius: 30px;
+            max-width: 600px;
+            margin: auto;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+        }
+
+        .calculator-card h2 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            color: #1a1a40;
+        }
+
+        .slider-group {
+            background: #fff;
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 25px;
+        }
+
+        .slider-labels {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            font-weight: 600;
+            color: #1a1a40;
+            margin-top: 10px;
+        }
+
+        input[type=range] {
+            width: 100%;
+            height: 8px;
+            border-radius: 5px;
+            background: #dcdcdc;
+            accent-color: #42A147;
+            appearance: none;
+            outline: none;
+        }
+
+        input[type=range]::-webkit-slider-thumb {
+            appearance: none;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: #1a1a40;
+            border: 2px solid #42A147;
+            cursor: pointer;
+        }
+
+        .summary {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 20px;
+            border-top: 1px solid #ccc;
+            font-size: 14px;
+            color: #666;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .summary div {
+            flex: 1;
+            text-align: center;
+        }
+
+        .summary strong {
+            display: block;
+            font-size: 24px;
+            color: #1a1a40;
+            margin-top: 5px;
+        }
+
+        .note {
+            font-size: 12px;
+            color: #888;
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .finance-section {
+                flex-direction: column;
+                padding: 40px 20px;
+            }
+        }
+
+        .inner {
+            max-width: 70%;
+            margin: 0 auto;
+        }
+
+        .loan-slider-container {
+            padding: 60px 0;
+        }
+
+        .loan-slider-card {
+            border-radius: 30px;
+            overflow: hidden;
+            background: white;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .loan-slider-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .loan-slider-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #120E3A;
+        }
+
+        .loan-slider-text {
+            font-size: 14px;
+            color: #444;
+            margin: 10px 0 20px;
+        }
+
+        .loan-slider-btn {
+            background-color: #42A147;
+            color: #fff;
+            border: none;
+            border-radius: 100px;
+            padding: 8px 20px;
+            font-size: 14px;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            box-shadow: 0 10px 30px rgba(66, 161, 71, 0.4);
+        }
+
+        .loan-slider-btn svg {
+            margin-left: 6px;
+        }
+
+        footer {
+            background: radial-gradient(ellipse at center, #FFFFFF 20%, #D1EBD4 100%);
+        }
+
+        .btn {
+            background-color: #42A147 !important;
+            color: White !important;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .about-image {
+            border-radius: 25px;
+            overflow: hidden;
+
+        }
+
+        .about-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+
+        @media (max-width: 991.98px) {
+
+            .about-card,
+            .about-image {
+                margin-bottom: 30px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.2rem;
+            }
+
+            .hero-text {
+                font-size: 1rem;
+            }
+
+            .hero-content {
+                padding: 30px;
+            }
+
+            .btns {
+                flex-direction: column;
+            }
+
+            .features-container {
+                padding: 30px;
+            }
+
+            .feature-box {
+                width: 100%;
+            }
+        }
+
+        button {
+            position: relative;
+            transition: color 0.3s ease;
+            z-index: 1;
+        }
+
+        button::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-color: #42A147;
+            border-radius: 10rem;
+            z-index: -2;
+        }
+
+        button::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-color: #2e7633;
+            /* darker */
+            width: 0%;
+            transition: all 0.3s ease;
+            border-radius: 10rem;
+            z-index: -1;
+        }
+
+        button:hover::before {
+            width: 100%;
+        }
+
+
+        .btn-primary,
+        .btn-outline-secondary {
+            background-color: #2e7633 !important;
+            border-color: #2e7633 !important;
+            color: white;
+        }
+
+        .btn-primary::after,
+        .btn-outline-secondary::after {
+            border-radius: 0 !important;
+        }
+
+        .btn-primary::before,
+        .btn-outline-secondary::before {
+            position: relative;
+        }
+
+        ul.list-unstyled.text-muted {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="">
+        <nav class="navbar navbar-expand-lg bg-white py-3">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="images/wcflogo.png" alt="WCF Logo" style="height: 72px; object-fit: contain;">
+                </a>
+
+
+
+                <!-- Desktop Nav -->
+                <div class="d-none d-lg-flex align-items-center gap-4 ms-auto">
+                    <ul class="nav nav-pill-rounded mb-0 d-flex align-items-center gap-3">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about-us">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#index.html#feature">Features</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#faq">FAQ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                    </ul>
+
+                    <div class="d-flex align-items-center gap-2">
+                        <span class="phone-icon">📞</span>
+                        <span class="phone-text">825–901–0833</span>
+                        <span class="phone-arrow">→</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section class="hero-wrapper">
+            <div class="">
+                <div class="hero-section container">
+                    <div class="hero-bg">
+                        <div class="hero-overlay"></div>
+                        <div class="hero-content">
+                            <div>
+                                <h1 class="hero-title" data-aos="fade-down-right" data-aos-delay="300">Commercial
+                                    <br>Title
+                                    Loans
+                                </h1>
+                                <p class="hero-text" data-aos="fade-down-right" data-aos-delay="500">Western Commercial
+                                    Finance provides
+                                    fast
+                                    and reliable no credit check title loans
+                                    to
+                                    construction companies, contract workers, equipment operators and those who own
+                                    their
+                                    construction vehicles and equipment outright.</p>
+                                <div class="btns d-flex 1flex-direction-row align-items-center gap-3">
+                                    <button class="apply-btn d-flex flex-direction-row align-items-center gap-2"
+                                        data-aos="fade-up" data-aos-delay="700" data-bs-toggle="modal"
+                                        data-bs-target="#formModal">
+                                        <span>Apply for a loan today</span>
+                                        <div
+                                            style="width: 44px;height: 44px;background-color: white;border-radius: 50%;display: flex;align-items: center;justify-content: center;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <path d="M6 12L10 8L6 4" stroke="#05071D" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <a class="scroll-down text-decoration-none" href="#about-us" data-aos="fade-up">
+                            Scroll Down <i class="bi bi-arrow-down-short"></i>
+                        </a>
+                    </div>
+                </div>
+        </section>
+
+
+
+        <div class="features-container">
+            <div class="feature-box" data-aos="fade-up" data-aos-delay="0">
+                <div class="feature-icon">
+                    <!-- <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" alt="Shield Icon" /> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="43" height="50" viewBox="0 0 43 50" fill="none">
+                        <path
+                            d="M41.8259 6.87501L22.0852 0.22915C21.8365 0.145459 21.5672 0.145459 21.3185 0.22915L1.57776 6.87501C1.08893 7.03959 0.759766 7.49779 0.759766 8.01355V24.5141C0.759766 36.7354 9.47148 47.2852 21.4744 49.5987C21.5495 49.6132 21.6257 49.6204 21.7017 49.6204C21.7778 49.6204 21.854 49.6132 21.9291 49.5987C33.9319 47.2852 42.6437 36.7354 42.6437 24.5141V8.01355C42.6438 7.49769 42.3147 7.03949 41.8259 6.87501ZM40.2412 24.5141C40.2412 35.509 32.4589 45.0102 21.7018 47.1946C10.9448 45.0102 3.16249 35.509 3.16249 24.5141V8.8767L21.7018 2.63528L40.2412 8.8767V24.5141Z"
+                            fill="#201B52" />
+                        <path
+                            d="M32.113 17.1512L19.4719 29.2544L12.7976 23.1251C12.309 22.6765 11.5489 22.7088 11.1001 23.1974C10.6515 23.6861 10.6838 24.4461 11.1724 24.8949L18.6763 31.7862C18.9064 31.9973 19.1977 32.1026 19.4888 32.1026C19.7883 32.1026 20.0878 31.9912 20.3197 31.7691L33.7746 18.8867C34.2538 18.4278 34.2703 17.6674 33.8115 17.1881C33.3526 16.7089 32.5922 16.6924 32.113 17.1512Z"
+                            fill="#42A147" />
+                    </svg>
+                </div>
+                <div class="feature-text">
+                    <span class="highlight">No</span> Credit<br><span class="highlight">Check</span>
+                </div>
+            </div>
+
+            <div class="feature-box" data-aos="fade-up" data-aos-delay="100">
+                <div class="feature-icon">
+                    <!-- <img src="https://cdn-icons-png.flaticon.com/512/4209/4209407.png" alt="Clock Dollar Icon" /> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="51" height="50" viewBox="0 0 51 50" fill="none">
+                        <path
+                            d="M37.6592 23.9373C35.613 23.9336 33.5953 24.4171 31.7731 25.3479C29.9508 26.2788 28.3765 27.6302 27.1802 29.2903C25.9839 30.9504 25.2002 32.8715 24.8938 34.8946C24.5875 36.9178 24.7673 38.9848 25.4183 40.9247C24.3376 41.1078 23.2435 41.2005 22.1474 41.2018C18.5955 41.2016 15.1112 40.231 12.0708 38.3948C9.0304 36.5586 6.54949 33.9265 4.89608 30.7829C3.24266 27.6394 2.47958 24.1038 2.68926 20.5581C2.89895 17.0125 4.07343 13.5915 6.08584 10.6647C6.2535 10.4214 6.31766 10.1215 6.26419 9.83089C6.21072 9.5403 6.044 9.28286 5.80071 9.1152C5.68025 9.03218 5.54462 8.9737 5.40155 8.9431C5.25849 8.9125 5.1108 8.91038 4.96692 8.93685C4.67633 8.99032 4.41889 9.15704 4.25123 9.40033C2.00884 12.6616 0.7001 16.4735 0.46638 20.4244C0.232661 24.3753 1.08284 28.3149 2.92509 31.8178C4.76734 35.3207 7.53164 38.2537 10.9194 40.3C14.3072 42.3462 18.1896 43.428 22.1474 43.4284C23.5491 43.4262 24.9473 43.2893 26.3227 43.0195C27.4128 45.0221 29.0138 46.7002 30.9628 47.8833C32.9119 49.0664 35.1395 49.7122 37.4192 49.7551C39.6988 49.7979 41.9491 49.2363 43.9413 48.1273C45.9334 47.0182 47.5963 45.4014 48.7608 43.4412C49.9254 41.481 50.55 39.2473 50.5712 36.9674C50.5924 34.6874 50.0094 32.4426 48.8815 30.461C47.7536 28.4795 46.1211 26.832 44.1499 25.6862C42.1787 24.5403 39.9392 23.9369 37.6592 23.9373ZM37.6592 47.5325C35.5462 47.5325 33.4807 46.9059 31.7238 45.732C29.967 44.5581 28.5977 42.8896 27.7891 40.9375C26.9805 38.9854 26.7689 36.8373 27.1811 34.7649C27.5933 32.6926 28.6108 30.789 30.1049 29.2949C31.599 27.8008 33.5026 26.7833 35.575 26.3711C37.6473 25.9588 39.7954 26.1704 41.7475 26.979C43.6997 27.7876 45.3682 29.1569 46.5421 30.9138C47.716 32.6707 48.3425 34.7362 48.3425 36.8491C48.3402 39.6818 47.2139 42.3978 45.2109 44.4008C43.2079 46.4038 40.4919 47.5301 37.6592 47.5325Z"
+                            fill="#201B52" />
+                        <path
+                            d="M37.6565 32.4984H37.6627C38.0913 32.4995 38.5019 32.6705 38.8047 32.9737C39.1074 33.277 39.2777 33.6879 39.2782 34.1164C39.2782 34.4118 39.3955 34.6951 39.6044 34.904C39.8133 35.1129 40.0965 35.2302 40.3919 35.2302C40.6873 35.2302 40.9706 35.1129 41.1795 34.904C41.3884 34.6951 41.5057 34.4118 41.5057 34.1164C41.5028 33.2939 41.2358 32.494 40.744 31.8347C40.2521 31.1754 39.5615 30.6915 38.7738 30.4543V28.9717C38.7738 28.6763 38.6565 28.393 38.4476 28.1841C38.2388 27.9752 37.9555 27.8579 37.6601 27.8579C37.3647 27.8579 37.0814 27.9752 36.8725 28.1841C36.6636 28.393 36.5463 28.6763 36.5463 28.9717V30.4526C35.6588 30.7128 34.8955 31.2854 34.3971 32.0644C33.8987 32.8435 33.699 33.7765 33.8347 34.6913C33.9704 35.6061 34.4324 36.441 35.1355 37.0418C35.8386 37.6426 36.7353 37.9689 37.6601 37.9603C37.9801 37.9601 38.2931 38.0549 38.5593 38.2326C38.8255 38.4103 39.033 38.6629 39.1556 38.9586C39.2782 39.2542 39.3104 39.5796 39.2481 39.8935C39.1857 40.2075 39.0317 40.4959 38.8054 40.7223C38.5792 40.9486 38.2909 41.1028 37.977 41.1653C37.6631 41.2279 37.3377 41.1959 37.0419 41.0734C36.7462 40.951 36.4935 40.7436 36.3156 40.4775C36.1378 40.2114 36.0429 39.8985 36.0429 39.5784C36.0429 39.283 35.9255 38.9997 35.7166 38.7909C35.5078 38.582 35.2245 38.4646 34.9291 38.4646C34.6337 38.4646 34.3504 38.582 34.1415 38.7909C33.9327 38.9997 33.8153 39.283 33.8153 39.5784C33.818 40.4008 34.0849 41.2005 34.5766 41.8597C35.0683 42.5189 35.7588 43.0026 36.5463 43.2396V44.7214C36.5463 45.0168 36.6636 45.3001 36.8725 45.5089C37.0814 45.7178 37.3647 45.8352 37.6601 45.8352C37.9555 45.8352 38.2388 45.7178 38.4476 45.5089C38.6565 45.3001 38.7738 45.0168 38.7738 44.7214V43.2423C39.6605 42.9814 40.423 42.4088 40.9208 41.63C41.4185 40.8512 41.618 39.9187 41.4823 39.0044C41.3467 38.0901 40.8851 37.2557 40.1827 36.655C39.4802 36.0542 38.5843 35.7276 37.6601 35.7354C37.2308 35.7354 36.8191 35.5649 36.5156 35.2614C36.2121 34.9578 36.0415 34.5462 36.0415 34.1169C36.0415 33.6876 36.2121 33.2759 36.5156 32.9724C36.8191 32.6689 37.2308 32.4984 37.6601 32.4984H37.6565Z"
+                            fill="#42A147" />
+                        <path
+                            d="M12.7712 4.61732C15.6383 3.04639 18.8544 2.22158 22.1237 2.21874C25.393 2.21589 28.6106 3.03511 31.4804 4.60105C34.3503 6.16699 36.7804 8.42938 38.5472 11.1802C40.314 13.9309 41.3608 17.0818 41.5913 20.343C41.6107 20.6243 41.736 20.8877 41.9421 21.0802C42.1481 21.2727 42.4195 21.3799 42.7015 21.3801H42.779C42.925 21.3701 43.0676 21.3313 43.1986 21.2661C43.3296 21.2009 43.4465 21.1106 43.5425 21.0002C43.6386 20.8898 43.712 20.7615 43.7585 20.6228C43.805 20.484 43.8237 20.3375 43.8135 20.1915C43.5577 16.5569 42.3918 13.045 40.4233 9.97892C38.4547 6.91287 35.7467 4.39116 32.5483 2.64582C29.3499 0.900484 25.7639 -0.012424 22.1203 -0.00890097C18.4767 -0.00537793 14.8925 0.914461 11.6975 2.66598C11.5621 2.73208 11.4415 2.82497 11.343 2.93903C11.2445 3.05308 11.1702 3.18593 11.1246 3.32954C11.0789 3.47315 11.0629 3.62452 11.0775 3.77451C11.092 3.92449 11.1369 4.06995 11.2093 4.2021C11.2817 4.33425 11.3802 4.45033 11.4987 4.54332C11.6173 4.6363 11.7535 4.70426 11.8991 4.74308C12.0447 4.7819 12.1967 4.79077 12.3458 4.76915C12.4949 4.74754 12.6381 4.69588 12.7667 4.61732H12.7712Z"
+                            fill="#201B52" />
+                        <path
+                            d="M8.16469 7.69037C8.44489 7.69081 8.71486 7.58512 8.92028 7.39455C9.04502 7.27931 9.17125 7.16556 9.29897 7.05329C9.51632 6.85701 9.64761 6.58301 9.66442 6.29062C9.68123 5.99824 9.58221 5.711 9.38878 5.49109C9.19535 5.27119 8.92309 5.13632 8.63095 5.11569C8.33881 5.09505 8.0503 5.19031 7.82789 5.38085C7.68651 5.50559 7.54692 5.63152 7.40911 5.75864C7.24455 5.91072 7.12969 6.10889 7.07953 6.32727C7.02938 6.54566 7.04625 6.77409 7.12796 6.98273C7.20966 7.19137 7.35239 7.37051 7.53751 7.49676C7.72263 7.62301 7.94062 7.69048 8.16469 7.69037Z"
+                            fill="#201B52" />
+                        <path
+                            d="M21.0339 11.0754V21.1636L15.9711 25.0841C15.8538 25.173 15.7554 25.2843 15.6814 25.4116C15.6075 25.5388 15.5594 25.6794 15.5401 25.8253C15.5208 25.9712 15.5306 26.1194 15.569 26.2615C15.6073 26.4036 15.6734 26.5367 15.7635 26.653C15.8535 26.7694 15.9658 26.8668 16.0937 26.9396C16.2216 27.0123 16.3627 27.059 16.5088 27.0769C16.6548 27.0948 16.803 27.0836 16.9447 27.0439C17.0864 27.0042 17.2188 26.9368 17.3343 26.8456L22.8284 22.5919C22.9628 22.4879 23.0717 22.3545 23.1466 22.2019C23.2215 22.0493 23.2605 21.8816 23.2605 21.7116V11.0754C23.2605 10.7801 23.1432 10.4968 22.9343 10.2879C22.7254 10.079 22.4421 9.96167 22.1468 9.96167C21.8514 9.96167 21.5681 10.079 21.3592 10.2879C21.1503 10.4968 21.0339 10.7801 21.0339 11.0754Z"
+                            fill="#201B52" />
+                    </svg>
+                </div>
+                <div class="feature-text">
+                    Money in <span class="highlight">Less</span><br>Then an <span class="highlight">Hour</span>
+                </div>
+            </div>
+
+            <div class="feature-box" data-aos="fade-up" data-aos-delay="200">
+                <div class="feature-icon">
+                    <!-- <img src="https://cdn-icons-png.flaticon.com/512/747/747310.png" alt="Calendar Icon" /> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="46" viewBox="0 0 45 46" fill="none">
+                        <path
+                            d="M41.4246 45.3198H3.57508C1.63367 45.3198 0.0541992 43.7403 0.0541992 41.7989V7.47034C0.0541992 5.52893 1.63367 3.94946 3.57508 3.94946H6.21574C6.7018 3.94946 7.09596 4.34363 7.09596 4.82968V6.54814C7.09596 7.03992 7.47622 7.45336 7.94379 7.46973C8.43196 7.49085 8.8564 7.09801 8.8564 6.59012V4.82968C8.8564 4.34363 9.25048 3.94946 9.73662 3.94946H15.8982C16.3842 3.94946 16.7784 4.34363 16.7784 4.82968V6.54814C16.7784 7.03992 17.1586 7.45336 17.6262 7.46973C18.1177 7.49085 18.5388 7.09449 18.5388 6.59012V4.82968C18.5388 4.34363 18.9329 3.94946 19.419 3.94946H25.5806C26.0666 3.94946 26.4608 4.34363 26.4608 4.82968V6.54814C26.4608 7.03992 26.8411 7.45336 27.3086 7.46973C27.7954 7.49076 28.2212 7.09907 28.2212 6.59012V4.82968C28.2212 4.34363 28.6154 3.94946 29.1015 3.94946H35.263C35.7491 3.94946 36.1432 4.34363 36.1432 4.82968V6.54814C36.1432 7.03992 36.5235 7.45336 36.9911 7.46973C37.4809 7.49085 37.9037 7.09643 37.9037 6.59012V4.82968C37.9037 4.34363 38.2978 3.94946 38.7839 3.94946H41.4246C43.366 3.94946 44.9454 5.52893 44.9454 7.47034V41.7989C44.9454 43.7403 43.366 45.3198 41.4246 45.3198ZM3.57508 5.7099C2.60437 5.7099 1.81464 6.49964 1.81464 7.47034V41.7989C1.81464 42.7696 2.60437 43.5594 3.57508 43.5594H41.4246C42.3953 43.5594 43.185 42.7696 43.185 41.7989V7.47034C43.185 6.49964 42.3953 5.7099 41.4246 5.7099H39.6641V6.59012C39.6641 8.08333 38.4315 9.28087 36.9294 9.22911C35.5014 9.17912 34.3828 8.00147 34.3828 6.54814V5.7099H29.9817V6.59012C29.9817 8.08412 28.7481 9.28087 27.247 9.22911C25.819 9.17912 24.7004 8.00147 24.7004 6.54814V5.7099H20.2993V6.59012C20.2993 8.08219 19.0676 9.28096 17.5646 9.22911C16.1365 9.17912 15.0179 8.00147 15.0179 6.54814V5.7099H10.6168V6.59012C10.6168 8.07946 9.38814 9.28096 7.88217 9.22911C6.4541 9.17912 5.33552 8.00147 5.33552 6.54814V5.7099H3.57508Z"
+                            fill="#201B52" />
+                        <path
+                            d="M44.0652 14.5121H0.93442C0.448274 14.5121 0.0541992 14.1181 0.0541992 13.6319C0.0541992 13.1458 0.448274 12.7517 0.93442 12.7517H44.0652C44.5513 12.7517 44.9454 13.1458 44.9454 13.6319C44.9454 14.1181 44.5513 14.5121 44.0652 14.5121Z"
+                            fill="#201B52" />
+                        <path
+                            d="M37.0237 9.23079C35.5677 9.23079 34.3831 8.04619 34.3831 6.59013V3.06925C34.3831 1.61319 35.5677 0.428589 37.0237 0.428589C38.4828 0.428589 39.6644 1.61028 39.6644 3.06925V6.59013C39.6644 8.04619 38.4798 9.23079 37.0237 9.23079ZM37.0237 2.18903C36.5384 2.18903 36.1435 2.5839 36.1435 3.06925V6.59013C36.1435 7.07548 36.5384 7.47035 37.0237 7.47035C37.5091 7.47035 37.9039 7.07548 37.9039 6.59013V3.06925C37.9039 2.58346 37.5097 2.18903 37.0237 2.18903Z"
+                            fill="#201B52" />
+                        <path
+                            d="M27.3411 9.23079C25.885 9.23079 24.7004 8.04619 24.7004 6.59013V3.06925C24.7004 1.61319 25.885 0.428589 27.3411 0.428589C28.8002 0.428589 29.9818 1.61028 29.9818 3.06925V6.59013C29.9818 8.04619 28.7972 9.23079 27.3411 9.23079ZM27.3411 2.18903C26.8557 2.18903 26.4609 2.5839 26.4609 3.06925V6.59013C26.4609 7.07548 26.8557 7.47035 27.3411 7.47035C27.8265 7.47035 28.2213 7.07548 28.2213 6.59013V3.06925C28.2213 2.58346 27.8271 2.18903 27.3411 2.18903Z"
+                            fill="#201B52" />
+                        <path
+                            d="M17.6587 9.23079C16.2027 9.23079 15.0181 8.04619 15.0181 6.59013V3.06925C15.0181 1.61319 16.2027 0.428589 17.6587 0.428589C19.1178 0.428589 20.2994 1.61028 20.2994 3.06925V6.59013C20.2994 8.04619 19.1148 9.23079 17.6587 9.23079ZM17.6587 2.18903C17.1734 2.18903 16.7785 2.5839 16.7785 3.06925V6.59013C16.7785 7.07548 17.1734 7.47035 17.6587 7.47035C18.1441 7.47035 18.5389 7.07548 18.5389 6.59013V3.06925C18.5389 2.58346 18.1447 2.18903 17.6587 2.18903Z"
+                            fill="#201B52" />
+                        <path
+                            d="M7.97611 9.23079C6.52005 9.23079 5.33545 8.04619 5.33545 6.59013V3.06925C5.33545 1.61319 6.52005 0.428589 7.97611 0.428589C9.43507 0.428589 10.6168 1.61028 10.6168 3.06925V6.59013C10.6168 8.04619 9.43217 9.23079 7.97611 9.23079ZM7.97611 2.18903C7.49076 2.18903 7.09589 2.5839 7.09589 3.06925V6.59013C7.09589 7.07548 7.49076 7.47035 7.97611 7.47035C8.46146 7.47035 8.85633 7.07548 8.85633 6.59013V3.06925C8.85633 2.58346 8.46208 2.18903 7.97611 2.18903Z"
+                            fill="#201B52" />
+                        <path
+                            d="M11.4971 23.3144H7.09604C6.60989 23.3144 6.21582 22.9202 6.21582 22.4342V18.0331C6.21582 17.5469 6.60989 17.1528 7.09604 17.1528H11.4971C11.9832 17.1528 12.3774 17.5469 12.3774 18.0331V22.4342C12.3774 22.9202 11.9832 23.3144 11.4971 23.3144ZM7.97626 21.5539H10.6169V18.9133H7.97626V21.5539Z"
+                            fill="#201B52" />
+                        <path
+                            d="M20.2994 23.3144H15.8983C15.4121 23.3144 15.0181 22.9202 15.0181 22.4342V18.0331C15.0181 17.5469 15.4121 17.1528 15.8983 17.1528H20.2994C20.7855 17.1528 21.1796 17.5469 21.1796 18.0331V22.4342C21.1796 22.9202 20.7855 23.3144 20.2994 23.3144ZM16.7785 21.5539H19.4192V18.9133H16.7785V21.5539Z"
+                            fill="#201B52" />
+                        <path
+                            d="M29.1016 23.3144H24.7005C24.2145 23.3144 23.8203 22.9202 23.8203 22.4342V18.0331C23.8203 17.5469 24.2145 17.1528 24.7005 17.1528H29.1016C29.5877 17.1528 29.9819 17.5469 29.9819 18.0331V22.4342C29.9819 22.9202 29.5877 23.3144 29.1016 23.3144ZM25.5808 21.5539H28.2214V18.9133H25.5808V21.5539Z"
+                            fill="#42A147" />
+                        <path
+                            d="M37.9039 23.3144H33.5028C33.0167 23.3144 32.6226 22.9202 32.6226 22.4342V18.0331C32.6226 17.5469 33.0167 17.1528 33.5028 17.1528H37.9039C38.3899 17.1528 38.7841 17.5469 38.7841 18.0331V22.4342C38.7841 22.9202 38.3899 23.3144 37.9039 23.3144ZM34.383 21.5539H37.0237V18.9133H34.383V21.5539Z"
+                            fill="#42A147" />
+                        <path
+                            d="M29.1016 32.1165H24.7005C24.2145 32.1165 23.8203 31.7223 23.8203 31.2363V26.8352C23.8203 26.3491 24.2145 25.955 24.7005 25.955H29.1016C29.5877 25.955 29.9819 26.3491 29.9819 26.8352V31.2363C29.9819 31.7223 29.5877 32.1165 29.1016 32.1165ZM25.5808 30.3561H28.2214V27.7154H25.5808V30.3561Z"
+                            fill="#42A147" />
+                        <path
+                            d="M37.9039 32.1165H33.5028C33.0167 32.1165 32.6226 31.7223 32.6226 31.2363V26.8352C32.6226 26.3491 33.0167 25.955 33.5028 25.955H37.9039C38.3899 25.955 38.7841 26.3491 38.7841 26.8352V31.2363C38.7841 31.7223 38.3899 32.1165 37.9039 32.1165ZM34.383 30.3561H37.0237V27.7154H34.383V30.3561Z"
+                            fill="#42A147" />
+                        <path
+                            d="M29.1016 40.9187H24.7005C24.2145 40.9187 23.8203 40.5246 23.8203 40.0385V35.6374C23.8203 35.1514 24.2145 34.7572 24.7005 34.7572H29.1016C29.5877 34.7572 29.9819 35.1514 29.9819 35.6374V40.0385C29.9819 40.5246 29.5877 40.9187 29.1016 40.9187ZM25.5808 39.1583H28.2214V36.5176H25.5808V39.1583Z"
+                            fill="#201B52" />
+                        <path
+                            d="M37.9039 40.9187H33.5028C33.0167 40.9187 32.6226 40.5246 32.6226 40.0385V35.6374C32.6226 35.1514 33.0167 34.7572 33.5028 34.7572H37.9039C38.3899 34.7572 38.7841 35.1514 38.7841 35.6374V40.0385C38.7841 40.5246 38.3899 40.9187 37.9039 40.9187ZM34.383 39.1583H37.0237V36.5176H34.383V39.1583Z"
+                            fill="#201B52" />
+                        <path
+                            d="M11.4971 32.1165H7.09604C6.60989 32.1165 6.21582 31.7223 6.21582 31.2363V26.8352C6.21582 26.3491 6.60989 25.955 7.09604 25.955H11.4971C11.9832 25.955 12.3774 26.3491 12.3774 26.8352V31.2363C12.3774 31.7223 11.9832 32.1165 11.4971 32.1165ZM7.97626 30.3561H10.6169V27.7154H7.97626V30.3561Z"
+                            fill="#201B52" />
+                        <path
+                            d="M20.2994 32.1165H15.8983C15.4121 32.1165 15.0181 31.7223 15.0181 31.2363V26.8352C15.0181 26.3491 15.4121 25.955 15.8983 25.955H20.2994C20.7855 25.955 21.1796 26.3491 21.1796 26.8352V31.2363C21.1796 31.7223 20.7855 32.1165 20.2994 32.1165ZM16.7785 30.3561H19.4192V27.7154H16.7785V30.3561Z"
+                            fill="#201B52" />
+                        <path
+                            d="M11.4971 40.9187H7.09604C6.60989 40.9187 6.21582 40.5246 6.21582 40.0385V35.6374C6.21582 35.1514 6.60989 34.7572 7.09604 34.7572H11.4971C11.9832 34.7572 12.3774 35.1514 12.3774 35.6374V40.0385C12.3774 40.5246 11.9832 40.9187 11.4971 40.9187ZM7.97626 39.1583H10.6169V36.5176H7.97626V39.1583Z"
+                            fill="#201B52" />
+                        <path
+                            d="M20.2994 40.9187H15.8983C15.4121 40.9187 15.0181 40.5246 15.0181 40.0385V35.6374C15.0181 35.1514 15.4121 34.7572 15.8983 34.7572H20.2994C20.7855 34.7572 21.1796 35.1514 21.1796 35.6374V40.0385C21.1796 40.5246 20.7855 40.9187 20.2994 40.9187ZM16.7785 39.1583H19.4192V36.5176H16.7785V39.1583Z"
+                            fill="#201B52" />
+                    </svg>
+                </div>
+                <div class="feature-text">
+                    3, 6, 9, 12, or <span class="highlight">24</span><br>Month <span class="highlight">Terms</span>
+                </div>
+            </div>
+
+            <div class="feature-box" data-aos="fade-up" data-aos-delay="300">
+                <div class="feature-icon">
+                    <!-- <img src="https://cdn-icons-png.flaticon.com/512/189/189107.png" alt="Payment Icon" /> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="51" height="51" viewBox="0 0 51 51" fill="none">
+                        <path
+                            d="M21.6347 50.9792C20.5992 50.9837 19.5703 50.8139 18.5912 50.477L8.12137 46.8399C7.97289 46.788 7.84414 46.6914 7.75285 46.5633C7.66156 46.4352 7.6122 46.282 7.61157 46.1247V34.1483C7.61157 33.9465 7.69174 33.753 7.83443 33.6103C7.97713 33.4676 8.17066 33.3875 8.37246 33.3875H12.4736C15.8083 33.496 18.9805 34.8539 21.3608 37.1919H27.0218C27.7349 37.1939 28.418 37.4786 28.9215 37.9835C29.425 38.4884 29.7077 39.1724 29.7077 39.8854C29.7065 40.0383 29.6938 40.191 29.6697 40.342L38.6329 37.8843C39.2383 37.6482 39.9127 37.6622 40.5078 37.9234C41.1028 38.1845 41.5697 38.6713 41.8058 39.2767C42.0419 39.8821 42.0279 40.5565 41.7668 41.1515C41.5056 41.7466 41.0188 42.2135 40.4134 42.4496L25.8805 49.9444C24.5685 50.6242 23.1124 50.9791 21.6347 50.9792ZM9.13335 45.5769L19.1238 49.0313C20.1146 49.3782 21.1661 49.5181 22.2131 49.4422C23.2602 49.3663 24.2805 49.0762 25.2109 48.59L39.7362 41.042C39.8568 40.9791 39.9621 40.8906 40.0447 40.7826C40.1273 40.6746 40.1851 40.5498 40.2141 40.417C40.2432 40.2841 40.2427 40.1466 40.2127 40.014C40.1827 39.8814 40.1239 39.757 40.0406 39.6496C39.9279 39.5038 39.7744 39.3948 39.5996 39.3365C39.4248 39.2783 39.2366 39.2733 39.059 39.3224L28.0947 42.3659C27.7624 42.5065 27.4054 42.579 27.0446 42.579H18.0509C17.8491 42.579 17.6556 42.4988 17.5129 42.3561C17.3702 42.2134 17.2901 42.0199 17.2901 41.8181C17.2901 41.6163 17.3702 41.4227 17.5129 41.28C17.6556 41.1374 17.8491 41.0572 18.0509 41.0572H27.0218C27.1679 41.0574 27.3127 41.029 27.4479 40.9735H27.5316C27.8353 40.9059 28.0997 40.7204 28.2667 40.4579C28.4336 40.1953 28.4894 39.8772 28.4218 39.5735C28.3542 39.2698 28.1687 39.0053 27.9062 38.8384C27.6436 38.6714 27.3255 38.6156 27.0218 38.6832H21.0641C20.8692 38.6845 20.6813 38.611 20.539 38.4778C18.827 36.8495 16.0422 34.9092 12.4736 34.9092H9.13335V45.5769Z"
+                            fill="#201B52" />
+                        <path
+                            d="M7.13969 49.3052H2.38415C1.85543 49.3052 1.34837 49.0951 0.974515 48.7213C0.600656 48.3474 0.390625 47.8403 0.390625 47.3116V32.9613C0.390625 32.4326 0.600656 31.9255 0.974515 31.5517C1.34837 31.1778 1.85543 30.9678 2.38415 30.9678H7.13969C7.66841 30.9678 8.17547 31.1778 8.54933 31.5517C8.92319 31.9255 9.13322 32.4326 9.13322 32.9613V47.3116C9.13322 47.8403 8.92319 48.3474 8.54933 48.7213C8.17547 49.0951 7.66841 49.3052 7.13969 49.3052ZM2.38415 32.4895C2.25903 32.4895 2.13904 32.5393 2.05057 32.6277C1.9621 32.7162 1.9124 32.8362 1.9124 32.9613V47.3116C1.9124 47.4367 1.9621 47.5567 2.05057 47.6452C2.13904 47.7337 2.25903 47.7834 2.38415 47.7834H7.13969C7.26481 47.7834 7.3848 47.7337 7.47327 47.6452C7.56174 47.5567 7.61144 47.4367 7.61144 47.3116V32.9613C7.61144 32.8362 7.56174 32.7162 7.47327 32.6277C7.3848 32.5393 7.26481 32.4895 7.13969 32.4895H2.38415Z"
+                            fill="#201B52" />
+                        <path
+                            d="M42.6274 18.3523H38.5262C35.1915 18.2437 32.0194 16.8858 29.6391 14.5479H23.9781C23.265 14.5458 22.5818 14.2612 22.0784 13.7563C21.5749 13.2513 21.2921 12.5674 21.2921 11.8543C21.2933 11.7014 21.306 11.5488 21.3302 11.3978L12.3745 13.8859C12.0748 14.0028 11.7549 14.0595 11.4332 14.0528C11.1115 14.0461 10.7943 13.9761 10.4997 13.8468C9.90467 13.5857 9.43774 13.0989 9.20163 12.4935C8.96553 11.8881 8.97959 11.2137 9.24072 10.6186C9.50185 10.0236 9.98866 9.55668 10.5941 9.32057L25.1194 1.7954C26.2269 1.22635 27.4377 0.885949 28.6795 0.794447C29.9213 0.702944 31.1688 0.862215 32.3478 1.26278L42.8785 4.89982C43.027 4.95172 43.1557 5.04837 43.247 5.17645C43.3383 5.30453 43.3877 5.45776 43.3883 5.61505V17.5914C43.3883 17.6913 43.3686 17.7903 43.3304 17.8826C43.2921 17.9749 43.2361 18.0588 43.1654 18.1294C43.0948 18.2001 43.0109 18.2561 42.9186 18.2944C42.8263 18.3326 42.7273 18.3523 42.6274 18.3523ZM23.4835 10.8347C23.2848 10.9287 23.1169 11.0774 22.9997 11.2634C22.8825 11.4494 22.8206 11.6649 22.8215 11.8848C22.8215 12.1929 22.9428 12.4887 23.1593 12.708C23.3758 12.9273 23.6699 13.0525 23.9781 13.0565H29.9282C30.123 13.0553 30.311 13.1288 30.4532 13.262C32.1652 14.8903 34.95 16.8305 38.5186 16.8305H41.8589V6.16289L31.8761 2.70846C30.8853 2.36152 29.8338 2.22168 28.7867 2.29759C27.7397 2.3735 26.7194 2.66355 25.789 3.14978L11.2941 10.6978C11.0883 10.8024 10.9288 10.9801 10.8469 11.1959C10.765 11.4118 10.7665 11.6505 10.8511 11.8654C10.9357 12.0802 11.0974 12.2558 11.3045 12.3579C11.5116 12.4599 11.7493 12.4812 11.9713 12.4174L22.9433 9.37383C23.2731 9.24724 23.6249 9.18774 23.9781 9.19883H32.9413C33.1431 9.19883 33.3366 9.27899 33.4793 9.42169C33.622 9.56438 33.7022 9.75792 33.7022 9.95972C33.7022 10.1615 33.622 10.355 33.4793 10.4977C33.3366 10.6404 33.1431 10.7206 32.9413 10.7206H23.9781C23.8271 10.7212 23.6775 10.7496 23.5367 10.8043C23.5212 10.818 23.5031 10.8283 23.4835 10.8347Z"
+                            fill="#201B52" />
+                        <path
+                            d="M48.6158 20.7719H43.8602C43.3315 20.7719 42.8244 20.5619 42.4506 20.1881C42.0767 19.8142 41.8667 19.3071 41.8667 18.7784V4.42809C41.8667 3.89938 42.0767 3.39232 42.4506 3.01846C42.8244 2.6446 43.3315 2.43457 43.8602 2.43457H48.6158C49.1445 2.43457 49.6515 2.6446 50.0254 3.01846C50.3993 3.39232 50.6093 3.89938 50.6093 4.42809V18.7784C50.6093 19.3071 50.3993 19.8142 50.0254 20.1881C49.6515 20.5619 49.1445 20.7719 48.6158 20.7719ZM43.8602 3.95634C43.7351 3.95634 43.6151 4.00605 43.5266 4.09452C43.4382 4.18299 43.3885 4.30298 43.3885 4.42809V18.7784C43.3885 18.9035 43.4382 19.0235 43.5266 19.112C43.6151 19.2005 43.7351 19.2502 43.8602 19.2502H48.6158C48.7409 19.2502 48.8609 19.2005 48.9493 19.112C49.0378 19.0235 49.0875 18.9035 49.0875 18.7784V4.42809C49.0875 4.30298 49.0378 4.18299 48.9493 4.09452C48.8609 4.00605 48.7409 3.95634 48.6158 3.95634H43.8602Z"
+                            fill="#201B52" />
+                        <path
+                            d="M25.5 34.4071C23.8116 34.4071 22.161 33.9064 20.7571 32.9683C19.3531 32.0302 18.2589 30.6969 17.6127 29.1369C16.9666 27.577 16.7975 25.8604 17.1269 24.2044C17.4563 22.5484 18.2694 21.0272 19.4634 19.8332C20.6573 18.6393 22.1785 17.8262 23.8345 17.4968C25.4906 17.1674 27.2071 17.3365 28.7671 17.9826C30.327 18.6288 31.6604 19.723 32.5984 21.1269C33.5365 22.5309 34.0372 24.1814 34.0372 25.8699C34.0352 28.1335 33.1351 30.3038 31.5345 31.9044C29.9339 33.505 27.7636 34.4051 25.5 34.4071ZM25.5 18.8545C24.1125 18.8545 22.7562 19.266 21.6025 20.0368C20.4488 20.8077 19.5497 21.9034 19.0187 23.1853C18.4877 24.4671 18.3488 25.8777 18.6195 27.2386C18.8902 28.5994 19.5583 29.8494 20.5394 30.8305C21.5205 31.8117 22.7706 32.4798 24.1314 32.7505C25.4923 33.0212 26.9028 32.8823 28.1847 32.3513C29.4666 31.8203 30.5623 30.9211 31.3331 29.7675C32.104 28.6138 32.5154 27.2574 32.5154 25.8699C32.5114 24.0106 31.771 22.2285 30.4562 20.9137C29.1415 19.599 27.3594 18.8586 25.5 18.8545Z"
+                            fill="#201B52" />
+                        <path
+                            d="M25.5001 30.0167C24.8496 30.0146 24.2264 29.7548 23.7672 29.2941C23.3079 28.8335 23.05 28.2095 23.0501 27.559C23.0501 27.3572 23.1302 27.1637 23.2729 27.021C23.4156 26.8783 23.6091 26.7981 23.8109 26.7981C24.0127 26.7981 24.2063 26.8783 24.349 27.021C24.4917 27.1637 24.5718 27.3572 24.5718 27.559C24.5718 27.7426 24.6263 27.9221 24.7283 28.0747C24.8303 28.2274 24.9752 28.3463 25.1449 28.4166C25.3145 28.4869 25.5011 28.5052 25.6812 28.4694C25.8613 28.4336 26.0267 28.3452 26.1565 28.2154C26.2863 28.0856 26.3747 27.9202 26.4106 27.7401C26.4464 27.56 26.428 27.3734 26.3577 27.2037C26.2875 27.0341 26.1685 26.8891 26.0158 26.7871C25.8632 26.6851 25.6837 26.6307 25.5001 26.6307C25.0155 26.6307 24.5418 26.487 24.1389 26.2178C23.736 25.9486 23.422 25.5659 23.2365 25.1182C23.0511 24.6706 23.0026 24.1779 23.0971 23.7027C23.1917 23.2274 23.425 22.7908 23.7677 22.4482C24.1103 22.1056 24.5469 21.8722 25.0221 21.7777C25.4974 21.6831 25.99 21.7317 26.4377 21.9171C26.8854 22.1025 27.268 22.4166 27.5373 22.8195C27.8065 23.2224 27.9502 23.6961 27.9502 24.1806C27.9502 24.3824 27.87 24.576 27.7273 24.7187C27.5846 24.8614 27.3911 24.9415 27.1893 24.9415C26.9875 24.9415 26.7939 24.8614 26.6512 24.7187C26.5086 24.576 26.4284 24.3824 26.4284 24.1806C26.4284 23.9971 26.3739 23.8176 26.2719 23.6649C26.1699 23.5123 26.025 23.3933 25.8553 23.323C25.6857 23.2528 25.4991 23.2344 25.319 23.2702C25.1389 23.306 24.9735 23.3944 24.8437 23.5243C24.7139 23.6541 24.6255 23.8195 24.5897 23.9995C24.5538 24.1796 24.5722 24.3663 24.6425 24.5359C24.7127 24.7055 24.8317 24.8505 24.9844 24.9525C25.137 25.0545 25.3165 25.1089 25.5001 25.1089C26.1519 25.1089 26.777 25.3679 27.2379 25.8288C27.6988 26.2897 27.9578 26.9148 27.9578 27.5666C27.9578 28.2184 27.6988 28.8435 27.2379 29.3044C26.777 29.7653 26.1519 30.0243 25.5001 30.0243V30.0167Z"
+                            fill="#42A147" />
+                        <path
+                            d="M25.5001 23.2448C25.2983 23.2448 25.1048 23.1646 24.9621 23.0219C24.8194 22.8792 24.7393 22.6857 24.7393 22.4839V21.1599C24.7393 20.9581 24.8194 20.7646 24.9621 20.6219C25.1048 20.4792 25.2983 20.399 25.5001 20.399C25.7019 20.399 25.8955 20.4792 26.0382 20.6219C26.1809 20.7646 26.261 20.9581 26.261 21.1599V22.4839C26.261 22.6857 26.1809 22.8792 26.0382 23.0219C25.8955 23.1646 25.7019 23.2448 25.5001 23.2448Z"
+                            fill="#42A147" />
+                        <path
+                            d="M25.5001 31.3331C25.2983 31.3331 25.1048 31.2529 24.9621 31.1102C24.8194 30.9676 24.7393 30.774 24.7393 30.5722V29.2559C24.7393 29.0541 24.8194 28.8605 24.9621 28.7179C25.1048 28.5752 25.2983 28.495 25.5001 28.495C25.7019 28.495 25.8955 28.5752 26.0382 28.7179C26.1809 28.8605 26.261 29.0541 26.261 29.2559V30.5722C26.261 30.774 26.1809 30.9676 26.0382 31.1102C25.8955 31.2529 25.7019 31.3331 25.5001 31.3331Z"
+                            fill="#42A147" />
+                    </svg>
+                </div>
+                <div class="feature-text">
+                    <span class="highlight">Affordable</span><br>Payments
+                </div>
+            </div>
+        </div>
+
+
+        <section class="buda-section" id="about-us">
+            <div class="buda-about" data-aos="fade-right" data-aos-delay="100">
+                <h5>About Us</h5>
+                <h2>Did you know that according to the Federal government, there are currently over 160,000 companies in
+                    Alberta – 98% of our entire workforce! – classed as “small” businesses?</h2>
+                <p>These are companies that are run with fewer staff, less capital, and unique financial needs.</p>
+                <p>Additionally, according to 2021 statistics compiled by the Business Council of Alberta, 87% of these
+                    small businesses have fewer than 5 employees. That means we’re a province of small businesses
+                    fueling contractors, who are their own small businesses. What a great system!</p>
+                <!-- <button>Read More <span>&#8250;</span></button> -->
+                <button class="loan-slider-btn" data-bs-toggle="modal" data-bs-target="#formModal">
+                    <span>Read More</span>
+                    <div
+                        style="width: 25px;height: 25px;background-color: white;border-radius: 50%;display: flex;align-items: center;justify-content: center; margin-left: 10px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M6 12L10 8L6 4" stroke="#05071D" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </button>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="about-image" data-aos="fade-left" data-aos-delay="100">
+                    <img src="images/calc.jpg" alt="">
+                </div>
+            </div>
+
+            <!-- <div class="buda-calculator" data-aos="fade-left" data-aos-delay="100">
+                <h3>Payment Calculator</h3>
+                <div class="slider-group">
+                    <div class="slider-labels">
+                        <span>$1000</span>
+                        <span id="amountMiddle">$17000</span>
+                        <span>$35000</span>
+                    </div>
+                    <input type="range" id="amountSlider" min="1000" max="35000" step="1000" value="17000">
+
+                </div>
+
+                <div class="slider-group">
+                    <div class="slider-labels">
+                        <span>1 months</span>
+                        <span id="durationMiddle">6 months</span>
+                        <span>12 months</span>
+                    </div>
+                    <input type="range" id="durationSlider" min="1" max="12" step="1" value="6">
+
+                </div>
+
+
+                <div class="summary">
+                    <div>You are getting: <strong id="amountDisplay">$17000</strong></div>
+                    <div>Terms of use: <strong id="durationDisplay">6 months</strong></div>
+                    <div>You must return: <strong id="totalDisplay">$19974</strong></div>
+                </div>
+                <p class="buda-note">*Fees for GPS device and installation may apply.</p>
+            </div> -->
+        </section>
+
+
+
+
+        <!-- Western commercial Finance-->
+        <section class="western-finance container">
+            <div class="card">
+                <div class="inner d-flex flex-column align-items-center justify-content-center">
+                    <div class="logo" data-aos="zoom-in" data-aos-delay="400">
+                        <img src="images/footer-logo.png" alt="WCF Logo" />
+                    </div>
+                    <div class="content" data-aos="zoom-in" data-aos-delay="400">
+                        At Western Commercial Finance, we understand.
+                        We are <span class="highlight">one of those small businesses</span>, and we know the value and
+                        importance of
+                        ensuring that our fellow Albertans <span class="highlight">and their businesses</span> are
+                        handled
+                        with care,
+                        and their needs met <span class="highlight">even when conventional lending is not
+                            available</span>.
+                    </div>
+                </div>
+        </section>
+
+        <section>
+            <div class="loan-slider-container container">
+                <div class="swiper loan-slider-swiper">
+                    <div class="swiper-wrapper">
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide loan-slider-card">
+                            <img src="images/slider-1.jpg" alt="Truck" class="loan-slider-img" data-aos="fade-up"
+                                data-aos-delay="200" />
+                            <div class="loan-slider-content p-4">
+                                <h5 class="loan-slider-title" data-aos="fade-up" data-aos-delay="300">Truck Title Loans
+                                </h5>
+                                <p class="loan-slider-text">
+                                    We offer fast and reliable no credit check commercial title loans to our clients who
+                                    own their own trucks and need cash now.
+                                </p>
+                                <button class="loan-slider-btn">
+                                    <span>Read More</span>
+                                    <div
+                                        style="width: 25px;height: 25px;background-color: white;border-radius: 50%;display: flex;align-items: center;justify-content: center; margin-left: 10px;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 16 16" fill="none">
+                                            <path d="M6 12L10 8L6 4" stroke="#05071D" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide loan-slider-card">
+                            <img src="images/slider-2.jpg" alt="Equipment" class="loan-slider-img" data-aos="fade-up"
+                                data-aos-delay="200" />
+                            <div class="loan-slider-content p-4">
+                                <h5 class="loan-slider-title" data-aos="fade-up" data-aos-delay="300">Equipment Title
+                                    Loans</h5>
+                                <p class="loan-slider-text">
+                                    If you own your own equipment, use a commercial equipment title loan for repairs,
+                                    expansion or just about anything you need.
+                                </p>
+                                <button class="loan-slider-btn">
+                                    <span>Read More</span>
+                                    <div
+                                        style="width: 25px;height: 25px;background-color: white;border-radius: 50%;display: flex;align-items: center;justify-content: center; margin-left: 10px;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 16 16" fill="none">
+                                            <path d="M6 12L10 8L6 4" stroke="#05071D" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="swiper-slide loan-slider-card">
+                            <img src="images/slider-3.jpg" alt="GPS" class="loan-slider-img" data-aos="fade-up"
+                                data-aos-delay="200" />
+                            <div class="loan-slider-content p-4">
+                                <h5 class="loan-slider-title" data-aos="fade-up" data-aos-delay="300">GPS Positioning
+                                </h5>
+                                <p class="loan-slider-text">
+                                    Our commercial vehicle and equipment title loans are protected by GPS Positioning to
+                                    protect your asset during repayment.
+                                </p>
+                                <button class="loan-slider-btn">
+                                    <span>Read More</span>
+                                    <div
+                                        style="width: 25px;height: 25px;background-color: white;border-radius: 50%;display: flex;align-items: center;justify-content: center; margin-left: 10px;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 16 16" fill="none">
+                                            <path d="M6 12L10 8L6 4" stroke="#05071D" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Slide 4 -->
+                        <div class="swiper-slide loan-slider-card">
+                            <img src="images/1west.jpg" alt="GPS" class="loan-slider-img" data-aos="fade-up"
+                                data-aos-delay="200" />
+                            <div class="loan-slider-content p-4">
+                                <h5 class="loan-slider-title" data-aos="fade-up" data-aos-delay="300">Installment Loans
+                                </h5>
+                                <p class="loan-slider-text">
+                                    Our commercial vehicle and equipment title loans are protected by GPS Positioning to
+                                    protect your asset during repayment.
+                                </p>
+                                <button class="loan-slider-btn">
+                                    <span>Read More</span>
+                                    <div
+                                        style="width: 25px;height: 25px;background-color: white;border-radius: 50%;display: flex;align-items: center;justify-content: center; margin-left: 10px;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 16 16" fill="none">
+                                            <path d="M6 12L10 8L6 4" stroke="#05071D" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+        </section>
+
+        <!-- Whether you need to meet payroll -->
+        <section class="finance-section">
+            <!-- Left Text Block -->
+            <section class="left-section" data-aos="fade-right" data-aos-delay="100">
+                <h2>Whether you need to meet payroll, or expand your equipment list, or just make ends meet, we have a
+                    solution for you.</h2>
+                <p>
+                    Contact us today for more information on our no credit check commercial title loans, installment
+                    loans, Smart Loans, or any other customized lending solution that we can help you with.
+                </p>
+                <p>
+                    If you’re ready to work with us, you can <a href="#">apply online</a> quickly and securely, and our
+                    professional lending advisors can assist you immediately, and often get you funding within an hour
+                    or less.
+                </p>
+                <button href="#" class="read-more-btn btn" data-bs-toggle="modal" data-bs-target="#formModal">Read More
+                    <div
+                        style="width: 25px;height: 25px;background-color: white;border-radius: 50%;display: flex;align-items: center;justify-content: center; margin-left: 10px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M6 12L10 8L6 4" stroke="#05071D" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </button>
+            </section>
+
+            <!-- Right Testimonial Block -->
+            <section class="right-section" data-aos="fade-left" data-aos-delay="200">
+                <div class="stars">★ ★ ★ ★ ★</div>
+                <div class="quote">
+                    I work in the oilfield business and have had to use these kind of businesses many times while
+                    waiting for my money to come in. For me personally Western Commercial Finance helped me through a
+                    crunch
+                    when I needed funds fast. My credit didn’t allow me to use a bank where of course I would get better
+                    rates. The staff clearly outlined the rates that I would have to pay and that their service was a
+                    short-term solution and not a longer term one.
+                </div>
+                <div class="divider"></div>
+                <div class="author">Robert B.</div>
+            </section>
+        </section>
+
+
+    </div>
+    <!-- Footer Section -->
+    <footer class="bg-light py-5 mt-5">
+        <div class="container">
+            <div class="row gy-4 align-items-start">
+
+                <!-- Logo and Description -->
+                <div class="col-12 col-md-5">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="images/footer-logo.png" alt="WCF Logo" height="48" class="me-2" />
+                        <h5 class="m-0 fw-bold" style="font-family: 'Clash Display', sans-serif;">WESTERN <br />
+                            COMMERCIAL <br /> FINANCE</h5>
+                    </div>
+                    <p class="text-muted">
+                        We make commercial title loans fast, flexible, and hassle-free—helping business owners access
+                        capital without giving up their vehicle or slowing down operations.
+                    </p>
+                </div>
+
+                <!-- Useful Links -->
+                <div class="col-12 col-md-2">
+                    <h6 class="fw-semibold mb-3" style="font-family: 'Clash Display', sans-serif;">Useful Links</h6>
+                    <ul class="list-unstyled text-muted">
+                        <li><a href="#" class="text-decoration-none text-dark">About Us</a></li>
+                        <li><a href="#" class="text-decoration-none text-dark">Apply</a></li>
+                        <li><a href="#" class="text-decoration-none text-dark">Features</a></li>
+                    </ul>
+                </div>
+
+                <!-- Who Can Apply -->
+                <div class="col-12 col-md-2">
+                    <h6 class="fw-semibold mb-3" style="font-family: 'Clash Display', sans-serif;">Who Can Apply</h6>
+                    <ul class="list-unstyled text-muted">
+                        <li> <a href="index.html#feature" class="text-decoration-none text-muted"> Independent
+                                owner-operators</a></li>
+                        <li> <a href="index.html#feature" class="text-decoration-none text-muted"> Businessmen</a></li>
+                        <li> <a href="index.html#feature" class="text-decoration-none text-muted"> Self-Employed</a>
+                        </li>
+                        <li> <a href="index.html#feature" class="text-decoration-none text-muted">Landscaping and snow
+                                removal companies</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div class="col-12 col-md-2">
+                    <h6 class="fw-semibold mb-3" style="font-family: 'Clash Display', sans-serif;">Support</h6>
+                    <ul class="list-unstyled text-muted">
+                        <li><a href="#" class="text-decoration-none text-dark">FAQs</a></li>
+                        <li><a href="#" class="text-decoration-none text-dark">Testimonials</a></li>
+                        <li><a href="#" class="text-decoration-none text-dark">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Footer -->
+            <hr class="my-4" />
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <p class="mb-2 mb-md-0 text-muted small">
+                    Copyright © 2025 <span class="text-success fw-semibold">Western Commercial Finance</span> | All
+                    Rights Reserved.
+                </p>
+                <div class="d-flex gap-3">
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/145/145807.png" alt="LinkedIn"></a>
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/733/733547.png" alt="Facebook"></a>
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/733/733635.png" alt="Twitter"></a>
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/733/733558.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
+        <!-- <div class="modal-dialog modal-md modal-dialog-centered modal-dialog-scrollable"> -->
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+
+            <div class="modal-content shadow-lg border-0 rounded-4">
+                <form id="loanForm" class="p-0">
+                    <!-- Header -->
+                    <div class="modal-header border-0 bg-gradient rounded-top-4"
+                        style="background: linear-gradient(to right, #4f46e5, #3b82f6); color: black;">
+                        <h5 class="modal-title fw-bold" id="formModalLabel"> Loan Application</h5>
+                        <a type="button" class="btn-close btn-close-black" data-bs-dismiss="modal"
+                            aria-label="Close"></a>
+                    </div>
+
+                    <!-- Body -->
+                    <div class="modal-body bg-white px-5 py-4 rounded-bottom-4">
+                        <div class="row g-4">
+
+                            <!-- Name -->
+                            <div class="col-md-6">
+                                <label class="form-label">First Name <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control shadow-sm" name="firstName" placeholder="John"
+                                    required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Last Name <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control shadow-sm" name="lastName" placeholder="Doe"
+                                    required>
+                            </div>
+
+                            <!-- Email & Phone -->
+                            <div class="col-md-6">
+                                <label class="form-label">Email <span class="text-danger">*</span></label>
+                                <input type="email" class="form-control shadow-sm" name="email"
+                                    placeholder="you@example.com" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Phone <span class="text-danger">*</span></label>
+                                <!-- <input type="tel" class="form-control shadow-sm" name="phone" placeholder="+1 555 1234"
+                                    required> -->
+                                <input type="tel" class="form-control shadow-sm" name="phone" placeholder="+1 555 1234"
+                                    required maxlength="15" title="Enter a valid phone number (digits, +, - or spaces)">
+
+                            </div>
+
+                            <!-- City & Province -->
+                            <div class="col-md-6">
+                                <label class="form-label">City <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control shadow-sm" name="city" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Province <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control shadow-sm" name="province" required>
+                            </div>
+
+                            <!-- Vehicle Questions -->
+                            <div class="col-md-6">
+                                <label class="form-label">Payments on Vehicle? <span
+                                        class="text-danger">*</span></label>
+                                <input type="text" class="form-control shadow-sm" name="payments" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Valid Driver’s License? <span
+                                        class="text-danger">*</span></label>
+                                <input type="text" class="form-control shadow-sm" name="license" required>
+                            </div>
+
+                            <!-- Insurance -->
+                            <div class="col-12">
+                                <label class="form-label">Vehicle Insured & Registered? <span
+                                        class="text-danger">*</span></label>
+                                <textarea class="form-control shadow-sm" name="insurance" rows="2" required></textarea>
+                            </div>
+
+                            <!-- KMs -->
+                            <div class="col-12">
+                                <label class="form-label">Vehicle Kilometers (KM's) <span
+                                        class="text-danger">*</span></label>
+                                <!-- <input type="number" class="form-control shadow-sm" name="kms" required> -->
+                                <input type="number" class="form-control shadow-sm" name="kms" required min="0"
+                                    max="10000000" title="Enter valid kilometers (0 - 1,000,000)">
+
+                            </div>
+
+
+                            <div class="mb-4">
+                                <label for="vehicleStatus" class="form-label fw-semibold"
+                                    style="font-size: 1.1rem; color: #3d3d3d;">
+                                    Is the vehicle insured and registered, If not, why?
+                                    <span class="text-danger fst-italic">(Required)</span>
+                                </label>
+                                <textarea class="form-control shadow-sm" name="vehicleStatus" id="vehicleStatus"
+                                    rows="4" required
+                                    style="border-radius: 8px; font-size: 1rem; resize: vertical;"></textarea>
+                            </div>
+                            <hr>
+
+                            <!-- Collateral -->
+                            <div class="col-12">
+                                <label class="form-label">What collateral do you have? <span
+                                        class="text-danger">*</span></label>
+                                <select class="form-select shadow-sm" name="collateral" id="collateralSelect" required>
+                                    <option value="">-- Choose --</option>
+                                    <option value="Car">Vehicle</option>
+                                    <option value="Trailer">Trailer</option>
+                                    <option value="Bike">Motorbike</option>
+                                    <option value="Boat">Boat</option>
+
+                                </select>
+                            </div>
+
+                            <!-- Show when Car or Boat -->
+                            <div class="row g-3 hidden" id="vehicleFields">
+                                <div class="col-md-4">
+                                    <label class="form-label">Make</label>
+                                    <input type="text" class="form-control shadow-sm" name="make">
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label">Model</label>
+                                    <input type="text" class="form-control shadow-sm" name="model">
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label">Year</label>
+                                    <!-- <input type="number" class="form-control shadow-sm" name="year"> -->
+                                    <input type="number" class="form-control shadow-sm" name="year" min="1900"
+                                        max="2099" title="Enter a valid year (1900 - 2099)">
+
+                                </div>
+
+                                <!-- VIN -->
+                                <div class="col-12">
+                                    <label class="form-label">Vehicle Identification Number (VIN) <span
+                                            class="text-danger">*</span></label>
+                                    <input type="text" class="form-control shadow-sm" name="vin" required>
+                                </div>
+                            </div>
+
+
+                            <!-- Loan Amount -->
+                            <div class="col-12">
+                                <label class="form-label">Loan Amount <span class="text-danger">*</span></label>
+                                <input type="number" class="form-control shadow-sm" name="amount"
+                                    placeholder="Up to $35,000" required min="1000" max="35000"
+                                    title="Loan must be between $100 and $35,000">
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Footer -->
+                    <div class="modal-footer border-0 bg-white rounded-bottom-4 px-5 py-3">
+                        <button type="submit" class="btn btn-primary px-4 shadow-sm">Submit</button>
+                        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper(".loan-slider-swiper", {
+            slidesPerView: 1.1,
+            spaceBetween: 20,
+            grabCursor: true,
+            loop: true,
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                },
+                1200: {
+                    slidesPerView: 3.5,
+                }
+            }
+        });
+
+    </script>
+
+    <script>
+        const collateralSelect = document.getElementById('collateralSelect');
+        const vehicleFields = document.getElementById('vehicleFields');
+
+        collateralSelect.addEventListener('change', () => {
+            const value = collateralSelect.value;
+            if (value === 'Car' || value === 'Boat' || value === 'Trailer' || value === 'Bike') {
+                vehicleFields.classList.remove('hidden');
+            } else {
+                vehicleFields.classList.add('hidden');
+                vehicleFields.querySelectorAll('input').forEach(input => input.value = '');
+            }
+        });
+
+        document.getElementById('loanForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData.entries());
+            console.log(data); // For debugging
+            fetch('http://localhost:1338/api/v1/send-west-email', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data)
+            })
+                .then(async res => {
+                    const result = await res.json();
+
+                    if (result.success) {
+                        alert('Your application has been submitted successfully!');
+                        this.reset(); // Reset the form
+                        const modalEl = document.getElementById('formModal');
+                        const modal = bootstrap.Modal.getInstance(modalEl) || new bootstrap.Modal(modalEl);
+                        modal.hide();
+                    } else {
+                        alert('There was an error submitting your application. Please try again later.');
+                    }
+
+                })
+                .catch(err => alert('Error: ' + err.message));
+        });
+    </script>
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            duration: 1000,
+            easing: 'ease-in-out'
+        });
+
+    </script>
+
+</body>
+
+</html>

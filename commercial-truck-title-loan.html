@@ -1,0 +1,2178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Western Commercial Finance | About</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Google Fonts: Clash Display & Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Bootstrap Icons CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <!-- Bootstrap Icons CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="icon" href="images/wcf.svg">
+    <style>
+        body {
+            background: #f9fafb;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Clash Display', sans-serif;
+        }
+
+        .nav-pill-rounded {
+            border: 1px solid #16163F;
+            border-radius: 999px;
+            padding: 4px 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .nav-link.active {
+            background-color: #16163F;
+            color: white !important;
+            border-radius: 999px;
+            padding: 8px 20px;
+        }
+
+        .nav-link {
+            color: #16163F;
+            font-weight: 500;
+        }
+
+        .topnav {
+            border-radius: 100px;
+            border: 0.8px solid #201B52;
+            padding: 10px 20px;
+        }
+
+
+        ul.dropdown-menu:hover,
+        ul.dropdown-menu:focus {
+            color: white !important;
+        }
+
+        .hero-wrapper {
+            background: #fff;
+        }
+
+        .hero-section {
+            position: relative;
+            border-radius: 60px;
+            overflow: hidden;
+            min-height: 600px;
+            margin: auto;
+        }
+
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            background: url('images/3commercial-0.jpg') no-repeat center center;
+            background-size: cover;
+            z-index: 1;
+
+        }
+
+        .hero-overlay {
+            /* position: absolute;
+            inset: 0; */
+            /* background: linear-gradient(90deg, rgba(0, 0, 0, 0.85) 30%, rgba(0, 0, 0, 0.0) 70%); */
+            /* background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%); */
+            /* z-index: 2; */
+            /* width: 1812px;
+            height: 778.834px; */
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 3;
+            color: white;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            /* padding-top: 240px; */
+            padding-left: 50px;
+        }
+
+        .hero-title {
+            /* font-weight: 700;
+            font-size: 3.5rem;
+            line-height: 1.1; */
+            color: #FFF;
+            text-shadow: 6px 6px 60px rgba(0, 0, 0, 0.30);
+            font-family: "Clash Display";
+            font-size: 74px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 100%;
+            /* 74px */
+            letter-spacing: -0.74px;
+        }
+
+        .hero-text {
+            /* font-size: 1.1rem; */
+            margin: 20px 0;
+            max-width: 500px;
+            color: #FFF;
+            text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.40);
+            font-family: Poppins;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 130%;
+            /* 28.6px */
+            letter-spacing: -0.22px;
+        }
+
+        .apply-btn {
+            border-radius: 100px;
+            background: #42A147;
+            color: white;
+            font-weight: 600;
+            padding: 12px 30px;
+            box-shadow: 0px 16px 50px 0px rgba(66, 161, 71, 0.40);
+            border: none;
+        }
+
+        .payment-btn {
+            border-radius: 100px;
+            background: transparent;
+            color: white;
+            font-weight: 600;
+            padding: 12px 30px;
+            box-shadow: 0px 16px 50px 0px rgba(66, 161, 71, 0.40);
+            border: 1px solid white;
+        }
+
+        .payment-btn span {
+            color: #201B52;
+            font-family: "Clash Display";
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 110%;
+            /* 33px */
+            letter-spacing: -0.3px;
+        }
+
+        .scroll-down {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: white;
+            color: #000;
+            border-top-right-radius: 60px;
+            padding: 20px 30px;
+            display: flex;
+            align-items: center;
+            z-index: 4;
+            color: #201B52;
+            font-family: Poppins;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 100%;
+            /* 22px */
+            letter-spacing: -0.22px;
+        }
+
+        .scroll-down i {
+            margin-left: 3px;
+            color: #42A147;
+            font-size: x-large;
+        }
+
+
+
+        .equipment-partner-section {
+            padding: 80px 0;
+            background: linear-gradient(to right, #ffffff 60%, #f4fdf5);
+        }
+
+        .equipment-partner-title {
+            font-family: 'Clash Display', sans-serif;
+            font-weight: 700;
+            font-size: 36px;
+            color: #120E3A;
+        }
+
+        .equipment-partner-subtitle {
+            color: #42A147;
+            font-weight: 500;
+            margin-bottom: 12px;
+        }
+
+        .equipment-partner-text {
+            color: #333;
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+        .equipment-partner-image {}
+
+        .equipment-partner-btn {
+            border-radius: 50px;
+            background-color: #42A147;
+            color: white;
+            font-weight: 500;
+            padding: 10px 24px;
+            box-shadow: 0px 16px 50px rgba(66, 161, 71, 0.4);
+            border: none;
+        }
+
+        .equipment-partner-feature {
+            background-color: #FAFAFB;
+            border-radius: 16px;
+            padding: 24px;
+            height: 100%;
+        }
+
+        .equipment-partner-feature-icon {
+            background: #f0f1f3;
+            border-radius: 12px;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 16px;
+        }
+
+        .equipment-partner-feature-title {
+            font-weight: 600;
+            font-size: 16px;
+            color: #120E3A;
+        }
+
+        .equipment-partner-feature-title span {
+            color: #42A147;
+        }
+
+        .equipment-partner-feature-text {
+            font-size: 14px;
+            color: #444;
+            margin-top: 6px;
+        }
+
+        .phone-text {
+            font-weight: 600;
+            color: #16163F;
+        }
+
+        .phone-icon {
+            color: #16163F;
+            font-size: 1.2rem;
+        }
+
+        .phone-arrow {
+            color: #28a745;
+            font-weight: bold;
+        }
+
+        .testimonial-card {
+            border-radius: 1rem;
+            box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+            padding: 1.5rem;
+            background: white;
+            height: 100%;
+            transition: all 0.3s ease;
+        }
+
+        .testimonial-card.bg-dark {
+            background-color: #121430 !important;
+            color: white;
+        }
+
+        .testimonial-card img.google-icon {
+            height: 24px;
+        }
+
+        .swiper-button-drag {
+            position: absolute;
+            bottom: -35px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #22c55e;
+            color: white;
+            padding: 8px 22px;
+            border-radius: 999px;
+            cursor: grab;
+            font-weight: bold;
+            z-index: 10;
+            box-shadow: 0 0 15px rgba(34, 197, 94, 0.3);
+            user-select: none;
+        }
+
+        .swiper-button-drag:active {
+            cursor: grabbing;
+        }
+
+        .swiper {
+            padding-bottom: 60px;
+        }
+
+
+        .who-we-serve {
+            padding: 60px 0;
+        }
+
+        .who-we-serve h5 {
+            color: #42A147;
+            font-weight: 500;
+        }
+
+        .who-we-serve h2 {
+            font-family: 'Clash Display', sans-serif;
+            font-size: 36px;
+            font-weight: 700;
+            color: #120E3A;
+        }
+
+        .who-we-serve p {
+            color: #444;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .who-we-serve .swiper-slide {
+            border-radius: 24px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .who-we-serve.swiper-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .who-we-serve .slide-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px;
+            color: #fff;
+            font-weight: 600;
+            font-size: 16px;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+            border-bottom-left-radius: 24px;
+            border-bottom-right-radius: 24px;
+        }
+
+        .who-we-serve .swiper {
+            padding: 30px 0;
+        }
+
+        .footer-heading {
+            font-family: 'Clash Display', sans-serif;
+            font-size: 22px;
+            font-weight: 600;
+            color: #111827;
+        }
+
+        .features-section {
+            background: radial-gradient(circle at right, #0e1f2f, #120E3A);
+            color: white;
+            border-radius: 60px;
+            padding: 60px;
+        }
+
+        .section-title {
+            font-family: 'Clash Display', sans-serif;
+            font-size: 38px;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .section-subtitle {
+            color: #42A147;
+            font-weight: 500;
+        }
+
+        .how-it-works {
+            padding: 80px 0;
+        }
+
+        .how-it-works h5 {
+            color: #42A147;
+            font-weight: 500;
+        }
+
+        .how-it-works h2 {
+            font-family: 'Clash Display', sans-serif;
+            font-weight: 700;
+            font-size: 36px;
+            color: #120E3A;
+        }
+
+        .how-it-works .step-circle {
+            width: 240px;
+            height: 240px;
+            border-radius: 50%;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            padding: 30px 20px;
+            position: relative;
+            margin: 0 auto;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .how-it-works .step-circle.highlight {
+            background-color: #f4fdf5;
+        }
+
+        .how-it-works .step-circle .step-icon {
+            font-size: 36px;
+            margin-bottom: 10px;
+            color: #120E3A;
+        }
+
+        .how-it-works .step-circle h6 {
+            font-weight: 600;
+            font-size: 16px;
+            color: #120E3A;
+        }
+
+        .how-it-works .step-circle h6 span {
+            color: #42A147;
+        }
+
+        .how-it-works .step-circle p {
+            font-size: 14px;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        .step-dot {
+            width: 8px;
+            height: 8px;
+            background-color: #42A147;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .step-dot.dot-top-left {
+            top: 8px;
+            left: 8px;
+        }
+
+        .step-dot.dot-top-right {
+            top: 8px;
+            right: 8px;
+        }
+
+        .step-dot.dot-bottom-left {
+            bottom: 8px;
+            left: 8px;
+        }
+
+        .step-dot.dot-bottom-right {
+            bottom: 8px;
+            right: 8px;
+        }
+
+        .how-it-works .step-dot {
+            width: 8px;
+            height: 8px;
+            background-color: #42A147;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .how-it-works .step-dot:nth-child(1) {
+            top: 8px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .how-it-works .step-dot:nth-child(2) {
+            bottom: 8px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .how-it-works .step-dot:nth-child(3) {
+            top: 50%;
+            left: 8px;
+            transform: translateY(-50%);
+        }
+
+        .how-it-works .step-dot:nth-child(4) {
+            top: 50%;
+            right: 8px;
+            transform: translateY(-50%);
+        }
+
+        .how-it-works .apply-btn {
+            border-radius: 50px;
+            background-color: #42A147;
+            color: white;
+            font-weight: 500;
+            padding: 10px 24px;
+            box-shadow: 0px 16px 50px rgba(66, 161, 71, 0.4);
+            border: none;
+        }
+
+        @media (max-width: 767px) {
+            .how-it-works .step-circle {
+                width: 100%;
+                height: auto;
+                border-radius: 20px;
+                padding: 20px;
+            }
+
+            .how-it-works .step-dot {
+                display: none;
+            }
+        }
+
+        .feature-card {
+            border-radius: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.14);
+            background: rgba(255, 255, 255, 0.06);
+            padding: 20px 25px;
+            color: white;
+        }
+
+        .feature-icon {
+            background: radial-gradient(circle, rgba(66, 161, 71, 1) 0%, rgba(32, 27, 82, 1) 100%);
+            border-radius: 50%;
+            /* width: 24px; */
+            /* height: 24px; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            width: 100px;
+            height: 100px;
+            flex-shrink: 0;
+        }
+
+        .feature-icon i {
+            color: white;
+            font-size: 12px;
+        }
+
+        .feature-title {
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        .feature-title .highlight {
+            color: #42A147;
+        }
+
+        .feature-text {
+            font-size: 14px;
+            color: #e4e4e4;
+            margin-top: 5px;
+        }
+
+        .built-trust {
+            padding: 60px 0;
+            background-color: #f9fafb;
+        }
+
+        .built-trust .section-subtitle {
+            color: #42A147;
+            font-weight: 500;
+        }
+
+        .built-trust .section-title {
+            font-family: 'Clash Display', sans-serif;
+            font-size: 36px;
+            font-weight: 700;
+            color: #120E3A;
+        }
+
+        .built-trust .section-description {
+            color: #333;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .built-trust .info-card {
+            background: #FAFAFB;
+            border-radius: 24px;
+            padding: 30px;
+            height: 100%;
+        }
+
+        .built-trust .info-icon {
+            background: #f2f3f5;
+            border-radius: 12px;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .built-trust .info-icon img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .built-trust .info-title {
+            font-weight: 700;
+            font-size: 20px;
+            color: #120E3A;
+        }
+
+        .built-trust .info-title span {
+            color: #42A147;
+        }
+
+        .built-trust .info-text {
+            font-size: 15px;
+            color: #444;
+            margin-top: 10px;
+        }
+
+        .footer-text {
+            font-size: 16px;
+            font-family: 'Poppins', sans-serif;
+            color: #4b5563;
+        }
+
+        .footer-link {
+            font-size: 16px;
+            font-family: 'Poppins', sans-serif;
+            color: #111827;
+            text-decoration: none;
+        }
+
+        .footer-link:hover {
+            text-decoration: underline;
+        }
+
+        .footer-logo-text {
+            font-family: 'Clash Display', sans-serif;
+            font-size: 22px;
+            font-weight: bold;
+            color: #111827;
+        }
+
+        /* index2 */
+
+        .features-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
+            max-width: 1200px;
+            margin: auto;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .feature-box {
+            background-color: white;
+            border-radius: 20px;
+            padding: 20px 24px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            min-width: 240px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+        }
+
+        .feature-icon {
+            background: gainsboro;
+            padding: 12px;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 56px;
+            height: 56px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+        }
+
+        .feature-icon img {
+            width: 32px;
+            height: 32px;
+            object-fit: contain;
+        }
+
+        .feature-text {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1.4;
+            color: #1f2937;
+        }
+
+        .highlight {
+            color: #2a5d2e;
+        }
+
+        .card {
+            background: radial-gradient(circle at top right, #1e2a39, #0e0e2a);
+            padding: 60px 30px;
+            text-align: center;
+            color: #fff;
+            display: flex;
+            border-radius: 60px;
+            background: #120E3A;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .logo {
+            background: white;
+            border-radius: 15px;
+            display: inline-block;
+            padding: 5px 20px;
+            margin-bottom: 40px;
+            Width: 277px;
+            height: 74px;
+
+        }
+
+        .logo img {
+            height: 70px;
+        }
+
+        .content {
+            font-size: 1.5rem;
+            line-height: 1.6;
+            font-weight: 400;
+            background: linear-gradient(92deg, #FFF 53.42%, #42A147 99.39%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+        }
+
+        .highlight {
+            /* color: #88cc8f; */
+        }
+
+        .finance-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: center;
+            align-items: stretch;
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .left-section,
+        .right-section {
+            flex: 1 1 450px;
+        }
+
+        .left-section h2 {
+            /* font-size: 1.8rem;
+            font-weight: 700; */
+            color: #1b1b3e;
+            margin-bottom: 20px;
+            color: #201B52;
+            font-family: "Clash Display";
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 120%;
+            /* 36px */
+            letter-spacing: -0.3px;
+        }
+
+        .left-section p {
+            /* font-size: 1rem; */
+            margin-bottom: 20px;
+            /* color: #444; */
+            color: #201B52;
+            font-family: Poppins;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+            /* 30px */
+            letter-spacing: -0.2px;
+        }
+
+        .left-section a {
+            color: #1b1b3e;
+            text-decoration: underline;
+        }
+
+        .read-more-btn {
+            background: linear-gradient(135deg, #63d471 0%, #233329 100%);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 100px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 600;
+            text-decoration: none;
+            box-shadow: 0px 16px 50px rgba(66, 161, 71, 0.4);
+        }
+
+        .read-more-btn span {
+            display: inline-block;
+            background: white;
+            color: #1b1b3e;
+            border-radius: 50%;
+            padding: 2px 8px;
+            font-weight: bold;
+        }
+
+        .right-section {
+            background: radial-gradient(circle at bottom left, #1b2a3d, #0f0f2e);
+            color: white;
+            padding: 40px;
+            border-radius: 40px;
+            text-align: center;
+        }
+
+        .stars {
+            font-size: 1.5rem;
+            color: #ffb100;
+            margin-bottom: 20px;
+        }
+
+        .quote {
+            /* font-size: 1rem; */
+            /* line-height: 1.6; */
+            margin-bottom: 30px;
+            color: #FFF;
+            text-align: center;
+            font-family: Poppins;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+            /* 30px */
+            letter-spacing: -0.2px;
+        }
+
+        .divider {
+            width: 40px;
+            height: 2px;
+            background-color: #42a147;
+            margin: 20px auto;
+        }
+
+        .author {
+            /* font-weight: 700; */
+            /* font-size: 1.2rem; */
+            color: #FFF;
+            font-family: "Clash Display";
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 120%;
+            /* 36px */
+            letter-spacing: -0.3px;
+        }
+
+        .buda-section {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            padding: 60px 5%;
+            flex-wrap: wrap;
+            /* background: linear-gradient(to right, #ffffff 60%, #f0f7f4 40%); */
+        }
+
+        .buda-about {
+            flex: 1;
+            max-width: 600px;
+        }
+
+        .buda-about h5 {
+            /* color: #42A147; */
+            /* font-size: 18px; */
+            margin-bottom: 10px;
+            color: #42A147;
+            font-family: Poppins;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 130%;
+            /* 28.6px */
+            letter-spacing: -0.22px;
+        }
+
+        .buda-about h2 {
+            /* font-weight: 700;
+            font-size: 26px;
+            color: #1a1a40;
+            line-height: 1.4;
+            margin-bottom: 15px; */
+            color: #201B52;
+            font-family: "Clash Display";
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 110%;
+            /* 33px */
+            letter-spacing: -0.3px;
+        }
+
+        .buda-about p {
+            /* font-size: 15px;
+            color: #333;
+            line-height: 1.7; */
+            margin-bottom: 20px;
+            color: #201B52;
+            font-family: Poppins;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+            /* 30px */
+            letter-spacing: -0.2px;
+        }
+
+        .buda-about button {
+            background: #42A147;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 5px 15px rgba(66, 161, 71, 0.3);
+        }
+
+        .buda-calculator {
+            flex: 1;
+            background: #eaf3ed;
+            border-radius: 30px;
+            padding: 30px 30px;
+            max-width: 600px;
+            border-radius: 60px;
+            background: linear-gradient(180deg, rgba(66, 161, 71, 0.20) 0%, rgba(24, 59, 26, 0.00) 100%);
+        }
+
+        .buda-calculator h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #1a1a40;
+        }
+
+        .buda-slider-group {
+            margin-bottom: 25px;
+        }
+
+        .buda-slider-group input[type=range] {
+            width: 100%;
+            accent-color: #42A147;
+        }
+
+        .buda-slider-labels {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            color: #1a1a40;
+            margin-top: 5px;
+        }
+
+        .buda-calculator-summary {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #ccc;
+            font-weight: 500;
+        }
+
+        .buda-calculator-summary div strong {
+            display: block;
+            font-size: 22px;
+            margin-top: 5px;
+            color: #1a1a40;
+        }
+
+        .buda-note {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #999;
+        }
+
+        .calculator-card {
+            background: linear-gradient(to bottom, #eaf3ed, #f5f7f6);
+            padding: 30px;
+            border-radius: 30px;
+            max-width: 600px;
+            margin: auto;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+        }
+
+        .calculator-card h2 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            color: #1a1a40;
+        }
+
+        .slider-group {
+            background: #fff;
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 25px;
+        }
+
+        .slider-labels {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            font-weight: 600;
+            color: #1a1a40;
+            margin-top: 10px;
+        }
+
+        input[type=range] {
+            width: 100%;
+            height: 8px;
+            border-radius: 5px;
+            background: #dcdcdc;
+            accent-color: #42A147;
+            appearance: none;
+            outline: none;
+        }
+
+        input[type=range]::-webkit-slider-thumb {
+            appearance: none;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: #1a1a40;
+            border: 2px solid #42A147;
+            cursor: pointer;
+        }
+
+        .summary {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 20px;
+            border-top: 1px solid #ccc;
+            font-size: 14px;
+            color: #666;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .summary div {
+            flex: 1;
+            text-align: center;
+        }
+
+        .summary strong {
+            display: block;
+            font-size: 24px;
+            color: #1a1a40;
+            margin-top: 5px;
+        }
+
+        .note {
+            font-size: 12px;
+            color: #888;
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .finance-section {
+                flex-direction: column;
+                padding: 40px 20px;
+            }
+        }
+
+        .inner {
+            max-width: 70%;
+            margin: 0 auto;
+        }
+
+        .loan-slider-container {
+            padding: 60px 0;
+        }
+
+        .loan-slider-card {
+            /* border-radius: 30px;
+            overflow: hidden;
+            background: white;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s; */
+        }
+
+        .loan-slider-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .loan-slider-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #120E3A;
+        }
+
+        .loan-slider-text {
+            font-size: 14px;
+            color: #444;
+            margin: 10px 0 20px;
+        }
+
+        .loan-slider-btn {
+            background-color: #42A147;
+            color: #fff;
+            border: none;
+            border-radius: 100px;
+            padding: 8px 20px;
+            font-size: 14px;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            box-shadow: 0 10px 30px rgba(66, 161, 71, 0.4);
+        }
+
+        .loan-slider-btn svg {
+            margin-left: 6px;
+        }
+
+        footer {
+            background: radial-gradient(ellipse at center, #FFFFFF 20%, #D1EBD4 100%);
+        }
+
+        .btn {
+            background-color: #42A147 !important;
+            color: White !important;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .about-image {
+            border-radius: 25px;
+            overflow: hidden;
+
+        }
+
+        .about-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+
+        @media (max-width: 991.98px) {
+
+            .about-card,
+            .about-image {
+                margin-bottom: 30px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.2rem;
+            }
+
+            .hero-text {
+                font-size: 1rem;
+            }
+
+            .hero-content {
+                padding: 30px;
+            }
+
+            .btns {
+                flex-direction: column;
+            }
+
+            .features-container {
+                padding: 30px;
+            }
+
+            .feature-box {
+                width: 100%;
+            }
+        }
+
+        button {
+            position: relative;
+            transition: color 0.3s ease;
+            z-index: 1;
+        }
+
+        button::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-color: #42A147;
+            border-radius: 10rem;
+            z-index: -2;
+        }
+
+        button::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-color: #2e7633;
+            /* darker */
+            width: 0%;
+            transition: all 0.3s ease;
+            border-radius: 10rem;
+            z-index: -1;
+        }
+
+        button:hover::before {
+            width: 100%;
+        }
+
+
+        .btn-primary,
+        .btn-outline-secondary {
+            background-color: #2e7633 !important;
+            border-color: #2e7633 !important;
+            color: white;
+        }
+
+        .btn-primary::after,
+        .btn-outline-secondary::after {
+            border-radius: 0 !important;
+        }
+
+        .btn-primary::before,
+        .btn-outline-secondary::before {
+            position: relative;
+        }
+
+        ul.list-unstyled.text-muted {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .navbar-toggler {
+            border-color: rgba(255, 255, 255, 0.5);
+            background: #16163F;
+            border-radius: 8px;
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+
+        img.loan-slider-img.aos-init.aos-animate {
+            height: 400px;
+            border-radius: 40px;
+        }
+
+        .hover-blue {
+            background: linear-gradient(180deg, rgba(32, 27, 82, 0.00) 0%, #201B52 100%);
+        }
+
+        .hover-overlay {
+            position: absolute;
+            bottom: 164px;
+            left: 0;
+            right: 0;
+            height: 100%;
+            opacity: 1;
+            transition: opacity 0.3s ease;
+            z-index: 1;
+            height: 100px;
+            border-radius: 0 0 40px 40px;
+        }
+
+        @media (max-width: 767px) {
+            .svg-drag {
+                width: 150px !important;
+                height: 150px !important;
+                top: 20% !important;
+                left: 70% !important;
+            }
+
+            .svg-drag svg {
+                width: 137px !important;
+                height: 137px !important;
+            }
+        }
+
+        a.nav-link:hover {
+            background: #16164F;
+            color: white;
+            border-radius: 999px;
+        }
+
+        /* --- Unified Button Style with Animation --- */
+        .btn-main {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            border-radius: 100px;
+            background: none;
+            color: #fff;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            padding: 12px 32px;
+            border: none;
+            box-shadow: 0 8px 32px rgba(66, 161, 71, 0.18);
+            font-size: 1rem;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            transition: color 0.3s, box-shadow 0.3s, transform 0.2s;
+            text-decoration: none !important;
+        }
+
+        .btn-main:active {
+            transform: scale(0.97);
+        }
+
+        .btn-main svg {
+            margin-left: 8px;
+        }
+
+        .btn-main::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(90deg, #42A147 60%, #2e7633 100%);
+            border-radius: 100px;
+            z-index: -2;
+            transition: background 0.3s;
+        }
+
+        .btn-main::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(90deg, #2e7633 60%, #42A147 100%);
+            border-radius: 100px;
+            z-index: -1;
+            width: 0%;
+            transition: width 0.3s;
+        }
+
+        .btn-main:hover::before,
+        .btn-main:focus::before {
+            width: 100%;
+        }
+
+        .btn-main:hover,
+        .btn-main:focus {
+            color: #fff;
+            box-shadow: 0 12px 36px rgba(66, 161, 71, 0.28);
+            text-decoration: none;
+        }
+
+        /* Remove old button classes */
+        .apply-btn,
+        .loan-slider-btn,
+        .read-more-btn,
+        .equipment-partner-btn,
+        .payment-btn {
+            all: unset;
+        }
+
+        /* Remove unnecessary button pseudo-elements for other buttons */
+        button:not(.btn-main)::after,
+        button:not(.btn-main)::before {
+            display: none !important;
+        }
+
+        /* Remove .btn overrides for Bootstrap if not needed */
+        .btn {
+            background: none !important;
+            color: inherit !important;
+            box-shadow: none !important;
+            border: none !important;
+            padding: 0 !important;
+        }
+
+        /* Modal buttons */
+        .modal-footer .btn-main {
+            width: auto;
+            min-width: 120px;
+        }
+
+        .buda-flex {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .buda-flex>.buda-about,
+        .buda-flex>.about-image {
+            flex: 1 1 0;
+            min-width: 0;
+        }
+
+        input {
+            height: 65px;
+        }
+
+        .buda-flex>.about-image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .buda-flex img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 767px) {
+            .buda-flex {
+                flex-direction: column;
+                gap: 24px;
+            }
+
+            .about-image,
+            .buda-about {
+                width: 100% !important;
+                max-width: 100% !important;
+                min-width: 0 !important;
+            }
+
+            .about-image img {
+                width: 100% !important;
+                height: auto !important;
+            }
+
+            .scroll-down {
+                display: none;
+            }
+
+            .topnav,
+            .nav-link.active {
+                border-radius: 0;
+                border: none;
+            }
+
+            .hero-content {
+                padding-left: 0;
+            }
+
+            .about-image {
+                width: 100% !important;
+            }
+
+            [data-aos] {
+                opacity: 1 !important;
+                transform: none !important;
+                transition: none !important;
+            }
+        }
+
+        .about-image {
+            width: 500px;
+        }
+
+        @media only screen and (max-width: 767px) {
+            .hero-bg {
+                margin: 10px;
+            }
+
+            .scroll-down {
+                display: none;
+            }
+
+            .topnav,
+            .nav-link.active {
+                border-radius: 0;
+                border: none;
+            }
+
+
+            .buda-flex>.buda-about,
+            .buda-flex>.about-image {
+                flex: 1;
+                min-width: 0;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="">
+
+        <nav class="navbar navbar-expand-lg bg-white py-3">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand d-flex align-items-center" href="/">
+                    <img src="images/wcflogo.png" alt="WCF Logo" style="height: 72px; object-fit: contain;">
+                </a>
+
+                <!-- Mobile Toggle Button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                    aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar Content -->
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="topnav navbar-nav mx-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about-us">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#western-finance">Features</a>
+                        </li>
+                        <!--add dropdown here-->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="locationsDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Locations</a>
+                            <ul class="dropdown-menu" aria-labelledby="locationsDropdown">
+                                <li><a class="dropdown-item" href="commercial-title-loans.html">Commercial Title
+                                        Loan</a></li>
+                                <li><a class="dropdown-item" href="commercial-truck-title-loan.html">Commercial Truck
+                                        Title Loan</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#faq">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#formModal">Contact Us</a>
+                        </li>
+                    </ul>
+
+                    <!-- Phone Section (Visible in desktop only) -->
+                    <div class="d-none d-lg-flex align-items-center gap-3 ms-4">
+                        <span class="contact-icon"><i class="bi bi-telephone"></i></span>
+                        <span class="contact-text"><a class="text-dark text-decoration-none"
+                                href="tel:8259010833">825–901–0833</a></span>
+                        <span class="contact-icon"><i class="bi bi-envelope"></i></span>
+                        <span class="contact-text"><a class="text-dark text-decoration-none"
+                                href="mailto:info@wcfinance.ca">info@wcfinance.ca</a></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section class="hero-wrapper">
+            <div class="">
+                <div class="hero-section container">
+                    <div class="hero-bg">
+                        <div class="hero-overlay"></div>
+                        <div class="hero-content">
+                            <div>
+                                <h1 class="hero-title" data-aos="fade-down-right" data-aos-delay="300">Commercial
+                                    <br>Truck Title Loans
+                                </h1>
+                                <p class="hero-text" data-aos="fade-down-right" data-aos-delay="500">Western Commercial
+                                    Do you need funds to help grow and develop your trucking business? To keep trucking
+                                    while you wait for client receivables?
+                                    </br>
+
+                                    At Western Commercial Finance, we understand that the trucking business can, at
+                                    times, be unreliable
+                                    and tough, and when vehicle repairs need to happen, or you're waiting on client
+                                    receivables, but your CVIP is due next week, sometimes you need a bridge loan to
+                                    bring you from here to there. That's where we can help</p>
+                                <div class="btns d-flex 1flex-direction-row align-items-center gap-3">
+                                    <button class="btn-main" data-aos="fade-up" data-aos-delay="700"
+                                        data-bs-toggle="modal" data-bs-target="#formModal">
+                                        <span>Apply for a loan today</span>
+                                        <div
+                                            style="width: 44px;height: 44px;background-color: white;border-radius: 50%;display: flex;align-items: center;justify-content: center;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <path d="M6 12L10 8L6 4" stroke="#05071D" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <a class="scroll-down text-decoration-none" href="#about-us" data-aos="fade-up">
+                            Scroll Down <i class="bi bi-arrow-down-short"></i>
+                        </a>
+                    </div>
+                </div>
+        </section>
+
+
+        <section class="my-5 container w-100">
+            <div>
+                <img src="images/commercial-t.png" class="w-100" alt="">
+            </div>
+        </section>
+
+
+        <section class="buda-section" id="about-us">
+            <div class="buda-flex">
+                <div class="buda-about" data-aos="fade-right" data-aos-delay="100">
+                    <h5>Calculate & Apply for Loan</h5>
+                    <h2>How Does a Truck <br>Title Loan Work?</h2>
+                    <p>Like all other title loans, this loan allows business owners to borrow capital off the equity in
+                        their commercial vehicles. And the best part – you keep running your truck throughout the entire
+                        term of your loan repayment, with no disruption to your day-to-day operations.</p>
+                    <button class="btn-main" data-bs-toggle="modal" data-bs-target="#formModal">
+                        <span>Apply Now</span>
+                        <div
+                            style="width: 25px;height: 25px;background-color: white;border-radius: 50%;display: flex;align-items: center;justify-content: center; margin-left: 10px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path d="M6 12L10 8L6 4" stroke="#05071D" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+                <div class="about-image" data-aos="fade-left" data-aos-delay="100">
+                    <img src="images/2commercial-0.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </section>
+
+        <section class="buda-section" id="about-us">
+            <div class="buda-flex">
+                <div class="about-image" data-aos="fade-left" data-aos-delay="100">
+                    <img src="images/west-title2.png" alt="" class="img-fluid">
+                </div>
+                <div class="buda-about" data-aos="fade-right" data-aos-delay="100">
+                    <h5>We Got You Covered</h5>
+                    <h2>Poor Credit? No Credit? No Problem!</h2>
+                    <p>As a common-sense lender, we understand that, especially in a tough economy, credit scores can
+                        often
+                        stand in the way of you acquiring the funds you need to make ends meet. This can also be tough
+                        if
+                        you are waiting on client receivables who run through third-party invoice factoring providers
+                        that
+                        hold back funds until their own accounts receivables have been balanced. It's like having money
+                        that
+                        you can't access until someone else completes their end of the paperwork.</p>
+                    <p>Western Commercial Finance understands! We have worked with many hard-working Alberta trucking
+                        companies in these
+                        exact situations and are uniquely equipped to assist our neighbours bridge the gap. Contact us
+                        if
+                        you have more questions about our commercial truck title loans or apply online to receive your
+                        money
+                        today.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="py-5" style="background-color: #f7fdf9;">
+            <div class="text-center mb-5">
+                <p class="text-success fw-semibold mb-1" style="color: #42A147;">Apply for Loan</p>
+                <h2 class="fw-bold text-dark" style="font-size: 2rem;">How to Qualify for Your<br>Commercial Truck Title
+                    Loan.</h2>
+                <p class="text-muted mx-auto mt-3" style="max-width: 600px;">
+                    If you own your own truck, you can quickly and easily <strong>apply online</strong>. One of our
+                    knowledgeable
+                    lending advisors will reach out to you to confirm the following pieces of information, and get your
+                    money
+                    to you often within less than an hour:
+                </p>
+            </div>
+
+            <div class="container">
+                <div class="p-4 p-md-5 rounded-4 text-center text-white" style="background-color: #120E3A;">
+                    <div class="row g-4 justify-content-center">
+                        <!-- Box 1 -->
+                        <div class="col-6 col-md-3">
+                            <div class="bg-white rounded-4 py-4 px-3 shadow-sm h-100">
+                                <div class="d-flex justify-content-center align-items-center mb-3">
+                                    <div class="rounded-circle d-flex align-items-center justify-content-center"
+                                        style="width: 50px; height: 50px; background-color: #42A147; box-shadow: 0px 16px 50px 0px #42A14766; color: white; font-weight: 600;">
+                                        01
+                                    </div>
+                                </div>
+                                <p class="fw-semibold text-dark mb-0">Proof of<br>Ownership</p>
+                            </div>
+                        </div>
+                        <!-- Box 2 -->
+                        <div class="col-6 col-md-3">
+                            <div class="bg-white rounded-4 py-4 px-3 shadow-sm h-100">
+                                <div class="d-flex justify-content-center align-items-center mb-3">
+                                    <div class="rounded-circle d-flex align-items-center justify-content-center"
+                                        style="width: 50px; height: 50px; background-color: #42A147; box-shadow: 0px 16px 50px 0px #42A14766; color: white; font-weight: 600;">
+                                        02
+                                    </div>
+                                </div>
+                                <p class="fw-semibold text-dark mb-0">Proof of<br>Registration</p>
+                            </div>
+                        </div>
+                        <!-- Box 3 -->
+                        <div class="col-6 col-md-3">
+                            <div class="bg-white rounded-4 py-4 px-3 shadow-sm h-100">
+                                <div class="d-flex justify-content-center align-items-center mb-3">
+                                    <div class="rounded-circle d-flex align-items-center justify-content-center"
+                                        style="width: 50px; height: 50px; background-color: #42A147; box-shadow: 0px 16px 50px 0px #42A14766; color: white; font-weight: 600;">
+                                        03
+                                    </div>
+                                </div>
+                                <p class="fw-semibold text-dark mb-0">Proof of Driver's<br>License</p>
+                            </div>
+                        </div>
+                        <!-- Box 4 -->
+                        <div class="col-6 col-md-3">
+                            <div class="bg-white rounded-4 py-4 px-3 shadow-sm h-100">
+                                <div class="d-flex justify-content-center align-items-center mb-3">
+                                    <div class="rounded-circle d-flex align-items-center justify-content-center"
+                                        style="width: 50px; height: 50px; background-color: #42A147; box-shadow: 0px 16px 50px 0px #42A14766; color: white; font-weight: 600;">
+                                        04
+                                    </div>
+                                </div>
+                                <p class="fw-semibold text-dark mb-0">Clear Vehicle<br>Title</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="text-white mt-4 mb-4" style="max-width: 700px; margin: 0 auto;">
+                        The amount that you can borrow will depend on the age and condition of the vehicle and so,
+                        sometimes, an inspection
+                        will need to be completed, but we help make that easy for you as well!
+                    </p>
+
+                    <a href="#" class="btn-main">
+                        Apply For a Loan Today
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Whether you need to meet payroll -->
+        <section class="finance-section">
+            <!-- Left Text Block -->
+            <section class="left-section" data-aos="fade-right" data-aos-delay="100">
+                <h2>Whether you need to meet payroll, or expand your equipment list, or just make ends meet, we have a
+                    solution for you.</h2>
+                <p>
+                    Contact us today for more information on our no credit check commercial title loans, installment
+                    loans, Smart Loans, or any other customized lending solution that we can help you with.
+                </p>
+                <p>
+                    If you're ready to work with us, you can <a href="#">apply online</a> quickly and securely, and our
+                    professional lending advisors can assist you immediately, and often get you funding within an hour
+                    or less.
+                </p>
+                <button class="btn-main" data-bs-toggle="modal" data-bs-target="#formModal">Apply Now
+                    <div
+                        style="width: 25px;height: 25px;background-color: white;border-radius: 50%;display: flex;align-items: center;justify-content: center; margin-left: 10px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M6 12L10 8L6 4" stroke="#05071D" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </button>
+            </section>
+
+            <!-- Right Testimonial Block -->
+            <section class="right-section" data-aos="fade-left" data-aos-delay="200">
+                <div class="stars">★ ★ ★ ★ ★</div>
+                <div class="quote">
+                    I work in the oilfield business and have had to use these kind of businesses many times while
+                    waiting for my money to come in. For me personally Western Commercial Finance helped me through a
+                    crunch
+                    when I needed funds fast. My credit didn't allow me to use a bank where of course I would get better
+                    rates. The staff clearly outlined the rates that I would have to pay and that their service was a
+                    short-term solution and not a longer term one.
+                </div>
+                <div class="divider"></div>
+                <div class="author">Robert B.</div>
+            </section>
+        </section>
+
+
+    </div>
+    <!-- Footer Section -->
+    <footer class="bg-light py-5 mt-5">
+        <div class="container">
+            <div class="row gy-4 align-items-start">
+
+                <!-- Logo and Description -->
+                <div class="col-12 col-md-5">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="images/footer-logo.png" alt="WCF Logo" height="48" class="me-2" />
+                        <h5 class="m-0 fw-bold" style="font-family: 'Clash Display', sans-serif;">WESTERN <br />
+                            COMMERCIAL <br /> FINANCE</h5>
+                    </div>
+                    <p class="text-muted">
+                        We make commercial title loans fast, flexible, and hassle-free—helping business owners access
+                        capital without giving up their vehicle or slowing down operations.
+                    </p>
+                </div>
+
+                <!-- Useful Links -->
+                <div class="col-12 col-md-2">
+                    <h6 class="fw-semibold mb-3" style="font-family: 'Clash Display', sans-serif;">Useful Links</h6>
+                    <ul class="list-unstyled text-muted">
+                        <li><a href="#about" class="text-decoration-none text-dark">About Us</a></li>
+                        <li><a data-bs-toggle="modal" data-bs-target="#formModal"
+                                class="text-decoration-none text-dark">Apply</a></li>
+                        <li><a href="index.html#feature" class="text-decoration-none text-dark">Features</a></li>
+                    </ul>
+                </div>
+
+                <!-- Who Can Apply -->
+                <div class="col-12 col-md-2">
+                    <h6 class="fw-semibold mb-3" style="font-family: 'Clash Display', sans-serif;">Who Can Apply</h6>
+                    <ul class="list-unstyled text-muted">
+                        <li> <a href="index.html#feature" class="text-decoration-none text-muted"> Independent
+                                owner-operators</a></li>
+                        <li> <a href="index.html#feature" class="text-decoration-none text-muted"> Businessmen</a></li>
+                        <li> <a href="index.html#feature" class="text-decoration-none text-muted"> Self-Employed</a>
+                        </li>
+                        <li> <a href="index.html#feature" class="text-decoration-none text-muted">Landscaping and snow
+                                removal companies</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div class="col-12 col-md-2">
+                    <h6 class="fw-semibold mb-3" style="font-family: 'Clash Display', sans-serif;">Support</h6>
+                    <ul class="list-unstyled text-muted">
+                        <li><a href="index.html#faq" class="text-decoration-none text-dark">FAQs</a></li>
+                        <li><a href="#index.html#testimonial" class="text-decoration-none text-dark">Testimonials</a>
+                        </li>
+                        <li><a data-bs-toggle="modal" data-bs-target="#formModal"
+                                class="text-decoration-none text-dark">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Footer -->
+            <hr class="my-4" />
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <p class="mb-2 mb-md-0 text-muted small">
+                    Copyright © 2025 <span class="text-success fw-semibold">Western Commercial Finance</span> | All
+                    Rights Reserved.
+                </p>
+                <div class="d-flex gap-3">
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/145/145807.png" alt="LinkedIn"></a>
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/733/733547.png" alt="Facebook"></a>
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/733/733635.png" alt="Twitter"></a>
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/733/733558.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
+        <!-- <div class="modal-dialog modal-md modal-dialog-centered modal-dialog-scrollable"> -->
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+
+            <div class="modal-content shadow-lg border-0 rounded-4">
+                <form id="loanForm" class="p-0">
+                    <!-- Header -->
+                    <div class="modal-header border-0 bg-gradient rounded-top-4"
+                        style="background: linear-gradient(to right, #4f46e5, #3b82f6); color: black;">
+                        <h5 class="modal-title fw-bold" id="formModalLabel"> Loan Application</h5>
+                        <a type="button" class="btn-close btn-close-black" data-bs-dismiss="modal"
+                            aria-label="Close"></a>
+                    </div>
+
+                    <!-- Body -->
+                    <div class="modal-body bg-white px-5 py-4 rounded-bottom-4">
+                        <div class="row g-4">
+
+                            <!-- Name -->
+                            <div class="col-md-6">
+                                <label class="form-label">First Name <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control shadow-sm" name="firstName" placeholder="John"
+                                    required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Last Name <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control shadow-sm" name="lastName" placeholder="Doe"
+                                    required>
+                            </div>
+
+                            <!-- Email & Phone -->
+                            <div class="col-md-6">
+                                <label class="form-label">Email <span class="text-danger">*</span></label>
+                                <input type="email" class="form-control shadow-sm" name="email"
+                                    placeholder="you@example.com" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Phone <span class="text-danger">*</span></label>
+                                <!-- <input type="tel" class="form-control shadow-sm" name="phone" placeholder="+1 555 1234"
+                                    required> -->
+                                <input type="tel" class="form-control shadow-sm" name="phone" placeholder="+1 555 1234"
+                                    required maxlength="15" title="Enter a valid phone number (digits, +, - or spaces)">
+
+                            </div>
+
+                            <!-- City & Province -->
+                            <div class="col-md-6">
+                                <label class="form-label">City <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control shadow-sm" name="city" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Province <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control shadow-sm" name="province" required>
+                            </div>
+
+                            <!-- Vehicle Questions -->
+                            <div class="col-md-6">
+                                <label class="form-label">Payments on Vehicle? <span
+                                        class="text-danger">*</span></label>
+                                <input type="text" class="form-control shadow-sm" name="payments" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Valid Driver's License? <span
+                                        class="text-danger">*</span></label>
+                                <input type="text" class="form-control shadow-sm" name="license" required>
+                            </div>
+
+                            <!-- Insurance -->
+                            <div class="col-12">
+                                <label class="form-label">Vehicle Insured & Registered? <span
+                                        class="text-danger">*</span></label>
+                                <textarea class="form-control shadow-sm" name="insurance" rows="2" required></textarea>
+                            </div>
+
+                            <!-- KMs -->
+                            <div class="col-12">
+                                <label class="form-label">Vehicle Kilometers (KM's) <span
+                                        class="text-danger">*</span></label>
+                                <!-- <input type="number" class="form-control shadow-sm" name="kms" required> -->
+                                <input type="number" class="form-control shadow-sm" name="kms" required min="0"
+                                    max="10000000" title="Enter valid kilometers (0 - 1,000,000)">
+
+                            </div>
+
+
+                            <div class="mb-4">
+                                <label for="vehicleStatus" class="form-label fw-semibold"
+                                    style="font-size: 1.1rem; color: #3d3d3d;">
+                                    Is the vehicle insured and registered, If not, why?
+                                    <span class="text-danger fst-italic">(Required)</span>
+                                </label>
+                                <textarea class="form-control shadow-sm" name="vehicleStatus" id="vehicleStatus"
+                                    rows="4" required
+                                    style="border-radius: 8px; font-size: 1rem; resize: vertical;"></textarea>
+                            </div>
+                            <hr>
+
+                            <!-- Collateral -->
+                            <div class="col-12">
+                                <label class="form-label">What collateral do you have? <span
+                                        class="text-danger">*</span></label>
+                                <select class="form-select shadow-sm" name="collateral" id="collateralSelect" required>
+                                    <option value="">-- Choose --</option>
+                                    <option value="Car">Vehicle</option>
+                                    <option value="Trailer">Trailer</option>
+                                    <option value="Bike">Motorbike</option>
+                                    <option value="Boat">Boat</option>
+
+                                </select>
+                            </div>
+
+                            <!-- Show when Car or Boat -->
+                            <div class="row g-3 hidden" id="vehicleFields">
+                                <div class="col-md-4">
+                                    <label class="form-label">Make</label>
+                                    <input type="text" class="form-control shadow-sm" name="make">
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label">Model</label>
+                                    <input type="text" class="form-control shadow-sm" name="model">
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label">Year</label>
+                                    <!-- <input type="number" class="form-control shadow-sm" name="year"> -->
+                                    <input type="number" class="form-control shadow-sm" name="year" min="1900"
+                                        max="2099" title="Enter a valid year (1900 - 2099)">
+
+                                </div>
+
+                                <!-- VIN -->
+                                <div class="col-12">
+                                    <label class="form-label">Vehicle Identification Number (VIN) <span
+                                            class="text-danger">*</span></label>
+                                    <input type="text" class="form-control shadow-sm" name="vin" required>
+                                </div>
+                            </div>
+
+
+                            <!-- Loan Amount -->
+                            <div class="col-12">
+                                <label class="form-label">Loan Amount <span class="text-danger">*</span></label>
+                                <input type="number" class="form-control shadow-sm" name="amount"
+                                    placeholder="Up to $35,000" required min="1000" max="35000"
+                                    title="Loan must be between $100 and $35,000">
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Footer -->
+                    <div class="modal-footer border-0 bg-white rounded-bottom-4 px-5 py-3">
+                        <button type="submit" class="btn-main px-4 shadow-sm">Submit</button>
+                        <button type="button" class="btn-main" data-bs-dismiss="modal">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6Lf3AWgrAAAAAKALewXDJHSgv7HICB2sPVPIljiF"></script>
+
+    <script>
+        const swiper = new Swiper(".loan-slider-swiper", {
+            slidesPerView: 1.1,
+            spaceBetween: 20,
+            grabCursor: true,
+            loop: true,
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                },
+                1200: {
+                    slidesPerView: 3.5,
+                }
+            }
+        });
+
+    </script>
+
+    <script>
+        const collateralSelect = document.getElementById('collateralSelect');
+        const vehicleFields = document.getElementById('vehicleFields');
+
+        collateralSelect.addEventListener('change', () => {
+            const value = collateralSelect.value;
+            if (value === 'Car' || value === 'Boat' || value === 'Trailer' || value === 'Bike') {
+                vehicleFields.classList.remove('hidden');
+            } else {
+                vehicleFields.classList.add('hidden');
+                vehicleFields.querySelectorAll('input').forEach(input => input.value = '');
+            }
+        });
+
+        document.getElementById('loanForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const form = this;
+
+            grecaptcha.ready(function () {
+                grecaptcha.execute('6Lf3AWgrAAAAAKALewXDJHSgv7HICB2sPVPIljiF', { action: 'submit' }).then(function (token) {
+                    const formData = new FormData(form);
+                    formData.append('recaptcha_token', token);
+
+                    // Show spinner
+
+                    const data = Object.fromEntries(formData.entries());
+
+                    fetch('sendEmail.php', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(data)
+                    })
+                        .then(async res => {
+                            const result = await res.json();
+
+                            if (result.success) {
+                                alert('Your application has been submitted successfully!');
+                                form.reset();
+
+                                // Close modal
+                                const modalEl = document.getElementById('formModal');
+                                const modal = bootstrap.Modal.getInstance(modalEl) || new bootstrap.Modal(modalEl);
+                                modal.hide();
+                            } else {
+                                alert(result.message || 'There was an error submitting your application. Please try again later.');
+                            }
+                        })
+                        .catch(err => {
+                            alert('Error: ' + err.message);
+                        });
+                });
+            });
+        });
+
+        // document.getElementById('loanForm').addEventListener('submit', function (e) {
+        //     e.preventDefault();
+
+        //     const formData = new FormData(this);
+        //     const data = Object.fromEntries(formData.entries());
+        //     console.log(data); // For debugging
+        //     fetch('sendEmail.php', {
+        //         method: 'POST',
+        //         headers: { 'Content-Type': 'application/json' },
+        //         body: JSON.stringify(data)
+        //     })
+        //         .then(async res => {
+        //             const result = await res.json();
+
+        //             if (result.success) {
+        //                 alert('Your application has been submitted successfully!');
+        //                 this.reset(); // Reset the form
+        //                 const modalEl = document.getElementById('formModal');
+        //                 const modal = bootstrap.Modal.getInstance(modalEl) || new bootstrap.Modal(modalEl);
+        //                 modal.hide();
+        //             } else {
+        //                 alert('There was an error submitting your application. Please try again later.');
+        //             }
+
+        //         })
+        //         .catch(err => alert('Error: ' + err.message));
+        // });
+    </script>
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            duration: 1000,
+            easing: 'ease-in-out',
+            disable: function () {
+                return window.innerWidth < 768;
+            }
+        });
+
+    </script>
+
+</body>
+
+</html>

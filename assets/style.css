@@ -1,0 +1,214 @@
+/* === BODY + STANDARD === */
+body {
+  background: #f9fafb;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Clash Display', sans-serif;
+}
+
+a.nav-link:hover {
+  background: #16164F;
+  color: white;
+  border-radius: 999px;
+}
+
+.nav-link {
+  color: #16163F;
+  font-weight: 500;
+}
+
+.nav-link.active {
+  background-color: #16163F;
+  color: white !important;
+  border-radius: 999px;
+  padding: 8px 20px;
+}
+
+.nav-pill-rounded {
+  border: 1px solid #16163F;
+  border-radius: 999px;
+  padding: 4px 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.nav-link.dropdown-toggle.show,
+.nav-item.show>.nav-link.dropdown-toggle {
+  color: white !important;
+  background-color: #16164F !important;
+}
+
+/* Apply pill style to all nav links */
+.nav-link {
+  border-radius: 999px;
+  padding: 10px 25px;
+  color: #16163F;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect: subtle background or shadow if needed */
+.nav-link:hover {
+  background-color: #f0f0f5;
+  color: #16163F;
+}
+
+/* Active nav item (like "Commercial" in your image) */
+.nav-link.active,
+.nav-link.show,
+.nav-link:focus {
+  background-color: #16163F;
+  color: white !important;
+  border-radius: 999px;
+}
+
+/* Make sure dropdown-toggle buttons keep same pill shape */
+.nav-link.dropdown-toggle {
+  border-radius: 999px;
+}
+
+/* Optional: keep dropdown items styled normally */
+.dropdown-menu .dropdown-item {
+  border-radius: 8px;
+  padding: 8px 16px;
+}
+
+
+.topnav {
+  border-radius: 100px;
+  border: 0.8px solid #201B52;
+  padding: 10px 20px;
+}
+
+/* === FOOTER === */
+footer {
+  background: radial-gradient(ellipse at center, #FFFFFF 20%, #D1EBD4 100%);
+}
+
+.footer-heading {
+  font-family: 'Clash Display', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.footer-text {
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  color: #4b5563;
+}
+
+.footer-link {
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  color: #111827;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.footer-logo-text {
+  font-family: 'Clash Display', sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  color: #111827;
+}
+
+/* === GLOBAL BUTTONS === */
+button {
+  position: relative;
+  transition: color 0.3s ease;
+  z-index: 1;
+}
+
+button::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: #42A147;
+  border-radius: 10rem;
+  z-index: -2;
+}
+
+button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: #2e7633;
+  width: 0%;
+  transition: all 0.3s ease;
+  border-radius: 10rem;
+  z-index: -1;
+}
+
+button:hover::before {
+  width: 100%;
+}
+
+.btn-primary,
+.btn-outline-secondary {
+  background-color: #2e7633 !important;
+  border-color: #2e7633 !important;
+  color: white;
+}
+
+.btn-primary::after,
+.btn-outline-secondary::after {
+  border-radius: 0 !important;
+}
+
+.btn-primary::before,
+.btn-outline-secondary::before {
+  position: relative;
+}
+
+/* === UTILITIES === */
+.hidden {
+  display: none;
+}
+
+ul.dropdown-menu:hover,
+ul.dropdown-menu:focus {
+  color: white !important;
+}
+
+ul.list-unstyled.text-muted {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* === RESPONSIVE === */
+@media only screen and (max-width: 767px) {
+
+  .topnav,
+  .nav-link.active {
+    border-radius: 0;
+    border: none;
+  }
+
+  a.nav-link:hover {
+    border-radius: 0;
+    padding: 10px 20px;
+  }
+}
+
+input {
+  height: 65px;
+}
